@@ -6,7 +6,7 @@ public class Bucketscript : MonoBehaviour
     public bool hasWater;
     public bool filableWater;
     public bool isNearTree;
-    private TreeFire currentTree; // This will hold the TreeFire component of the current tree
+    public TreeFire currentTree; 
 
     public int bucketCharge;
 
@@ -19,9 +19,9 @@ public class Bucketscript : MonoBehaviour
             bucketCharge = 2;
         }
         
-        if (currentTree != null && isNearTree && hasWater && Input.GetKeyDown(KeyCode.Space))
+        if (isNearTree && hasWater && Input.GetKeyDown(KeyCode.Space))
         {
-            currentTree.Extinguish(); // Call Extinguish on the current tree
+            currentTree.Extinguish(); 
             bucketCharge -= 1;
             
             if (bucketCharge <= 0)
@@ -33,17 +33,13 @@ public class Bucketscript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        // Check if the player is near a tree and store the TreeFire component
         if (col.CompareTag("Tree"))
         {
             currentTree = col.GetComponent<TreeFire>();
-            if (currentTree != null && currentTree.isOnFire)
-            {
-                isNearTree = true; // Mark that we are near a tree
-            }
+            isNearTree = true; 
+            
         }
 
-        // Check if the player is near water to refill the bucket
         if (col.CompareTag("Water"))
         {
             filableWater = true;
@@ -54,13 +50,12 @@ public class Bucketscript : MonoBehaviour
     {
         if (col.CompareTag("Tree"))
         {
-            isNearTree = false; // Exit when we are no longer near the tree
-            currentTree = null; // Remove reference to the tree
+            isNearTree = false;
         }
 
         if (col.CompareTag("Water"))
         {
-            filableWater = false; // Stop refilling when leaving water
+            filableWater = false;
         }
     }
 }

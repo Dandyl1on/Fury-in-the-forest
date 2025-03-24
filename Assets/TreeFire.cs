@@ -3,7 +3,7 @@ using UnityEngine;
 public class TreeFire : MonoBehaviour
 {
     public bool isOnFire;
-    private SpriteRenderer Tree;
+    public SpriteRenderer Tree;
     public Sprite Fire;
     public Sprite noFire;
 
