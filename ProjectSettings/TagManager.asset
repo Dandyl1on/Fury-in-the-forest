@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tree
   - Water
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - groundLayer
   - Player
   - Follower
-  - 
+  - WallLayer
   - 
   - 
   - 
