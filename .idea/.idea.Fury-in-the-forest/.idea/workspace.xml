@@ -6,16 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Damage.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Faint.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Faint.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle2.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle2.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Movement.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Sleep.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Sleep.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Cat Sprite Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Cat Sprite Sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Damage.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle2.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle2.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Jump.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Jump.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Movement.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Paw lick.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Paw lick.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Sleep.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Sleep.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Damage.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Faint.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Faint.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Idle.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Movement.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Damage.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Faint.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Faint.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle2.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle2.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Movement.gif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Squirrel Sprite Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Squirrel Sprite Sheet.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cameracontroller.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -26,27 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\marku\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\marku\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\marku\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\marku\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\marku\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\marku\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\Unity\6000.0.26f1\Editor\Unity.exe" />
@@ -106,6 +127,7 @@
       <workItem from="1742810449111" duration="14668000" />
       <workItem from="1742981407089" duration="2849000" />
       <workItem from="1742996197149" duration="3617000" />
+      <workItem from="1743068434102" duration="6346000" />
     </task>
     <servers />
   </component>
