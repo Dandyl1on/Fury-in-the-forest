@@ -5,33 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Damage.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Faint.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Faint.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle2.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle2.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Movement.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Sleep.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Sleep.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Cat Sprite Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Cat Sprite Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Damage.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle2.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Idle2.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Jump.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Jump.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Movement.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Paw lick.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Paw lick.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Sleep.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Sleep.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Damage.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Faint.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Faint.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Idle.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/HedgehogAnimations/Movement.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Damage.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Damage.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Faint.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Faint.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle2.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Idle2.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Movement.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Movement.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Squirrel Sprite Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/SquirrelAnimations/Squirrel Sprite Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Fall.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Fall.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/PreJump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/PreJump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
