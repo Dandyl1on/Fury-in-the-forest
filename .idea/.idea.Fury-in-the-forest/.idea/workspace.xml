@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Fall.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Fall.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Fox_Sprite_Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Fox_Sprite_Sheet.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Idle.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Jump.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/PreJump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/PreJump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Movement.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Movement.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +111,7 @@
       <workItem from="1742981407089" duration="2849000" />
       <workItem from="1742996197149" duration="3617000" />
       <workItem from="1743068434102" duration="6346000" />
+      <workItem from="1743091813969" duration="2654000" />
     </task>
     <servers />
   </component>

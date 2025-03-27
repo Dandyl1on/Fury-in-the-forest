@@ -12,8 +12,10 @@ public class Playermovement : MonoBehaviour
     public float speed = 8f;
     public float jumpPower;
     public bool grounded;
+    public bool Falls;
 
     public Animator Animation;
+    private Transform Player;
 
     //below all are used for basic player stuff
     [SerializeField] private Rigidbody2D rb;
@@ -23,6 +25,7 @@ public class Playermovement : MonoBehaviour
     private void Start()
     {
         Animation = GetComponent<Animator>();
+        Player = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -40,6 +43,8 @@ public class Playermovement : MonoBehaviour
         }
         Animation.SetBool("IsMoving", horizontalInput !=0);
         Animation.SetBool("IsGround", grounded);
+        Animation.SetBool("Falling", Falls);
+
 
         if (horizontalInput > 0.01f)
         {
@@ -49,6 +54,11 @@ public class Playermovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        if (Player.position.y > 4f)
+        {
+            Animation.SetTrigger("Falling");
+        }
     }
 
     
@@ -56,7 +66,6 @@ public class Playermovement : MonoBehaviour
     {
         Animation.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-        Debug.Log(rb.linearVelocity.y);
         grounded = false;
 
     }
@@ -67,6 +76,19 @@ public class Playermovement : MonoBehaviour
         if (col.gameObject.tag == "Ground")
         {
             grounded = true;
+            Falls = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            if (grounded)
+            {
+                Falls = true;    
+            }
+            
         }
     }
 }
