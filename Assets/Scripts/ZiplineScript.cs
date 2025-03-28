@@ -8,8 +8,12 @@ public class ZiplineScript : MonoBehaviour
     public GameObject Destination;
     private bool isOnZipline = false;
 
+    public Animator ani;
+    public Cameracontroller cam;
+
     void Update()
     {
+        ani.SetBool("ZipLine", cam.OnZipline);
         if (isOnZipline && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(MovePlayerOnZipline());
@@ -38,7 +42,9 @@ public class ZiplineScript : MonoBehaviour
         float elapsedTime = 0f;
         Vector2 start = Player.transform.position;
         Vector2 end = Destination.transform.position;
-
+        
+        cam.OnZipline = true; // Notify the camera to stop following normally
+        
         while (elapsedTime < duration)
         {
             Player.transform.position = Vector2.Lerp(start, end, elapsedTime / duration);
@@ -47,6 +53,9 @@ public class ZiplineScript : MonoBehaviour
         }
 
         Player.transform.position = end; // Ensure the player reaches the destination
+        
+        cam.OnZipline = false;
+
     }
 }
 

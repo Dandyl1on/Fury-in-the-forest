@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+
 public class Playermovement : MonoBehaviour
 {   
     //the horizontal float is for movement either 1 for right or -1 for left and 0 for no movement
@@ -13,19 +14,21 @@ public class Playermovement : MonoBehaviour
     public float jumpPower;
     public bool grounded;
     public bool Falls;
+    
+    public float idle2chance = 0.2f;
+    public float checkinterval = 1f;
 
     public Animator Animation;
     private Transform Player;
 
     //below all are used for basic player stuff
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
 
     private void Start()
     {
         Animation = GetComponent<Animator>();
         Player = GetComponent<Transform>();
+        InvokeRepeating(nameof(checkforIdle2), checkinterval, checkinterval);
     }
 
     // Update is called once per frame
@@ -34,18 +37,23 @@ public class Playermovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(horizontalInput*speed, rb.linearVelocity.y);
         
-        
-        
         // jumps the player according to its x direction and jump power (is in update to not miss button press)
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             Jump();
+            if (Player.position.y > 4f)
+            {
+                Animation.SetTrigger("Falling");
+                if (Player.position.y > 4f)
+                {
+                    Animation.SetTrigger("Falling");
+                }
+            }
         }
         Animation.SetBool("IsMoving", horizontalInput !=0);
         Animation.SetBool("IsGround", grounded);
         Animation.SetBool("Falling", Falls);
-
-
+        
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
@@ -55,9 +63,14 @@ public class Playermovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        if (Player.position.y > 4f)
+        
+    }
+
+    void checkforIdle2()
+    {
+        if (UnityEngine.Random.value < idle2chance)
         {
-            Animation.SetTrigger("Falling");
+            Animation.SetTrigger("Idle2");
         }
     }
 

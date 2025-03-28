@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burning Forest3Fire_0: -7990783391035176686
+      Burning Forest3Fire_1: 1963158956876613413
+      Burning Forest3Fire_10: -2719028957502713543
+      Burning Forest3Fire_2: -4370664715755322432
+      Burning Forest3Fire_3: -9202603874878741150
+      Burning Forest3Fire_4: 389049636514802271
+      Burning Forest3Fire_5: 4673407817453185194
+      Burning Forest3Fire_6: -1704356708185797124
+      Burning Forest3Fire_7: 4955566909886666422
+      Burning Forest3Fire_8: -8535774803537926741
+      Burning Forest3Fire_9: -1018873249640175928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

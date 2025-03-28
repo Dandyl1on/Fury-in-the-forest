@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burning Forest1_0: 7151179572323728836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
