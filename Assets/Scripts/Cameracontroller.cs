@@ -18,7 +18,7 @@ public class Cameracontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Player.position.x + lookAHead, Player.position.y+1.5f, transform.position.z);
+        transform.position = new Vector3(Player.position.x + lookAHead, Player.position.y, transform.position.z);
         lookAHead = Mathf.Lerp(lookAHead, (distance * Player.localScale.x), Time.deltaTime*cameraSpeed);
     }
 }
