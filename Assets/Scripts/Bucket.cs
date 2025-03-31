@@ -10,34 +10,20 @@ public class Bucketscript : MonoBehaviour
 
     public int bucketCharge;
     
-    // redundant movement delete after use
-    public float speed = 5f; 
-    private Rigidbody2D rb; 
-    private float moveInput;
-    
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component
-    }
-    void FixedUpdate()
-    {
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y); // Move left/right
-    }
-    
-    // redundant movement delete after use
+   
+   
 
     // Update is called once per frame
     void Update()
     {
-        moveInput = Input.GetAxisRaw("Horizontal");  // redundant movement delete after use
 
-        if (filableWater && Input.GetKeyDown(KeyCode.Space))
+        if (filableWater && Input.GetKeyDown(KeyCode.E))
         {
             hasWater = true;
             bucketCharge = 2;
         }
         
-        if (isNearTree && hasWater && Input.GetKeyDown(KeyCode.Space))
+        if (isNearTree && hasWater && Input.GetKeyDown(KeyCode.E))
         {
             currentTree.Extinguish(); 
             bucketCharge -= 1;

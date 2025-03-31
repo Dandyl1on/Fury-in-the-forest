@@ -70,7 +70,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.81
+  orthographic size: 3.51
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -153,3 +153,5 @@ MonoBehaviour:
   Player: {fileID: 0}
   distance: 2
   cameraSpeed: 2
+  zipline: {fileID: 0}
+  OnZipline: 0
