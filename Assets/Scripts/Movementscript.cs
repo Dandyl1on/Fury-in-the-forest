@@ -14,6 +14,8 @@ public class Playermovement : MonoBehaviour
     public float jumpPower;
     public bool grounded;
     public bool Falls;
+    private bool DoubleJump;
+    private int doubleJump = 0;
     
     public float idle2chance = 0.2f;
     public float checkinterval = 1f;
@@ -40,15 +42,14 @@ public class Playermovement : MonoBehaviour
         // jumps the player according to its x direction and jump power (is in update to not miss button press)
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
+            //Debug.Log(DoubleJump);
             Jump();
-            if (Player.position.y > 4f)
-            {
-                Animation.SetTrigger("Falling");
-                if (Player.position.y > 4f)
-                {
-                    Animation.SetTrigger("Falling");
-                }
-            }
+            doubleJump = 1;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && doubleJump == 1)
+        {
+            Jump();
+            doubleJump = 2;
         }
         Animation.SetBool("IsMoving", horizontalInput !=0);
         Animation.SetBool("IsGround", grounded);
@@ -62,8 +63,6 @@ public class Playermovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-
-        
     }
 
     void checkforIdle2()
@@ -80,7 +79,6 @@ public class Playermovement : MonoBehaviour
         Animation.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
         grounded = false;
-
     }
 
     // returns a true or false depending on if the overlap circle is well overlapping with the ground layer integer on the layer list (set this in the editor)
@@ -90,6 +88,7 @@ public class Playermovement : MonoBehaviour
         {
             grounded = true;
             Falls = false;
+            doubleJump = 0;
         }
     }
 
@@ -97,7 +96,7 @@ public class Playermovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Ground")
         {
-            if (grounded)
+            if (grounded && Animation.GetBool("ZipLine")==false)
             {
                 Falls = true;    
             }

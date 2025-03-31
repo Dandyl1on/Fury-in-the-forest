@@ -1240,6 +1240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 2051851593}
   Destination: {fileID: 1984830597}
+  ani: {fileID: 2051851594}
   cam: {fileID: 1468261456}
 --- !u!61 &1841009631
 BoxCollider2D:
