@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 354af80f37feb5246a759905f39c1940
+guid: 9aec782e64f65604488c55b53c316306
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2830914609437994625
-    second: Burning Forest3_0
+      213: -8905100184824446893
+    second: Burning Forest11_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Burning Forest3_0
+      name: Burning Forest11_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 384
-        height: 153
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18ee305a6dd694720800000000000000
-      internalID: 2830914609437994625
+      spriteID: 350064a209aba6480800000000000000
+      internalID: -8905100184824446893
       vertices: []
       indices: 
       edges: []
