@@ -15733,7 +15733,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -28453,8 +28453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeatSlider: {fileID: 643177631}
-  IncreaseHeat: 0
-  DecreaseHeat: 0
+  IncreaseHeat: 1.2
+  DecreaseHeat: 1.2
 --- !u!1001 &1933065432
 PrefabInstance:
   m_ObjectHideFlags: 0
