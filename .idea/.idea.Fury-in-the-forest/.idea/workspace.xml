@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Parallax/Burning Forest11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parallax/Burning Forest11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Parallax/Burning Forest2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parallax/Burning Forest2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Parallax/Burning Forest3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parallax/Burning Forest3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cameracontroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameracontroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Heat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -112,7 +112,7 @@
       <workItem from="1743091813969" duration="2654000" />
       <workItem from="1743153766030" duration="6261000" />
       <workItem from="1743421946857" duration="3898000" />
-      <workItem from="1743496698700" duration="322000" />
+      <workItem from="1743496698700" duration="4127000" />
     </task>
     <servers />
   </component>

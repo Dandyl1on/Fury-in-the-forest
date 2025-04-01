@@ -15,7 +15,7 @@ public class Playermovement : MonoBehaviour
     public bool grounded;
     public bool Falls;
     private bool DoubleJump;
-    private int doubleJump = 0;
+    private int doubleJump;
     
     public float idle2chance = 0.2f;
     public float checkinterval = 1f;

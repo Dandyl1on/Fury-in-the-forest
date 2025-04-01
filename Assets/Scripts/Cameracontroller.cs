@@ -28,7 +28,10 @@ public class Cameracontroller : MonoBehaviour
         else
         {
             // Smoothly move camera to match zipline motion
-            transform.position = Vector3.Lerp(transform.position, new Vector3(Player.position.x*2, Player.position.y+2, transform.position.z), Time.deltaTime * cameraSpeed);
+            float targetX = Mathf.Lerp(transform.position.x, Player.position.x + 2f, Time.deltaTime * cameraSpeed);
+            float targetY = Mathf.Lerp(transform.position.y, Player.position.y - 1.5f, Time.deltaTime * cameraSpeed);
+            transform.position = new Vector3(targetX, targetY, transform.position.z);
+            // transform.position = Vector3.Lerp(transform.position, new Vector3(Player.position.x*1.5f, Player.position.y-2, transform.position.z), Time.deltaTime * cameraSpeed);
         }
     }
 }
