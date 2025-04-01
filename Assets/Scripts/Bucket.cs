@@ -6,13 +6,10 @@ public class Bucketscript : MonoBehaviour
     public bool hasWater;
     public bool filableWater;
     public bool isNearTree;
-    public TreeFire currentTree; 
+    public Tree currentTree;
 
     public int bucketCharge;
     
-   
-   
-
     // Update is called once per frame
     void Update()
     {
@@ -39,7 +36,7 @@ public class Bucketscript : MonoBehaviour
     {
         if (col.CompareTag("Tree"))
         {
-            currentTree = col.GetComponent<TreeFire>();
+            currentTree = col.GetComponent<Tree>();
             isNearTree = true; 
             
         }

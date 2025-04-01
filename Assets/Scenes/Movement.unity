@@ -1020,9 +1020,9 @@ GameObject:
   m_Component:
   - component: {fileID: 952217352}
   - component: {fileID: 952217351}
-  - component: {fileID: 952217355}
   - component: {fileID: 952217354}
   - component: {fileID: 952217353}
+  - component: {fileID: 952217355}
   m_Layer: 0
   m_Name: Square (8)
   m_TagString: Tree
@@ -1201,14 +1201,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 952217350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5626d692d898c44803c0c0b86e7ded, type: 3}
+  m_Script: {fileID: 11500000, guid: 0375ab15ca7316548931bc39326476a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOnFire: 0
-  Tree: {fileID: 952217351}
-  Fire: {fileID: -6847213522562900817, guid: 06115b85f8af2564887bc9d884086991, type: 3}
+  TreeFire: {fileID: 952217351}
+  Fire: {fileID: -1841265087, guid: 039b896ef486d2c4d8142e3e3280374d, type: 3}
   noFire: {fileID: 4863554413037471907, guid: 7572782c5a0687041a552989d1d5b52a, type: 3}
-  col: {fileID: 952217354}
+  col: {fileID: 952217353}
 --- !u!1 &1345106318
 GameObject:
   m_ObjectHideFlags: 0
