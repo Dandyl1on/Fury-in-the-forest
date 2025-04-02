@@ -51,6 +51,7 @@ public class Playermovement : MonoBehaviour
             Jump();
             doubleJump = 2;
         }
+        
         Animation.SetBool("IsMoving", horizontalInput !=0);
         Animation.SetBool("IsGround", grounded);
         Animation.SetBool("Falling", Falls);

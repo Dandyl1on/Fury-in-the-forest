@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Movement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cameracontroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cameracontroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +112,8 @@
       <workItem from="1743091813969" duration="2654000" />
       <workItem from="1743153766030" duration="6261000" />
       <workItem from="1743421946857" duration="3898000" />
-      <workItem from="1743496698700" duration="4127000" />
+      <workItem from="1743496698700" duration="4807000" />
+      <workItem from="1743595147474" duration="2223000" />
     </task>
     <servers />
   </component>
