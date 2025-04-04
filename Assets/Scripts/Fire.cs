@@ -3,13 +3,13 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     public bool isOnFire;
-    public GameObject ThisFire;
+    
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ThisFire = GetComponent<GameObject>();
+        
         isOnFire = true;
     }
 
@@ -17,7 +17,7 @@ public class Fire : MonoBehaviour
     {
         if (isOnFire)
         {
-            Destroy(ThisFire);
+            Destroy(gameObject);
         }
     }
 }
