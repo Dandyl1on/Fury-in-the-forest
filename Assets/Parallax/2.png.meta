@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b924317fcc49b2d44abd4a4f06b59ed5
+guid: 288530d539b923c42b7cdaad9f21584c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5877132948514370689
-    second: Burning Forest2_0
+      213: 6937817954938267909
+    second: 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Burning Forest2_0
+      name: 2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18471fd3745cf8150800000000000000
-      internalID: 5877132948514370689
+      spriteID: 5092c600ca4184060800000000000000
+      internalID: 6937817954938267909
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Burning Forest2_0: 5877132948514370689
+      2_0: 6937817954938267909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
