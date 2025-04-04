@@ -13,17 +13,11 @@ public class Heat : MonoBehaviour
     {
         HeatSlider.GetComponent<Slider>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     private void OnTriggerStay2D(Collider2D other)
     {
         
-        if (other.CompareTag("Tree"))
+        if (other.CompareTag("Flames"))
         {
             HeatSlider.value+= Time.deltaTime * IncreaseHeat;
         }

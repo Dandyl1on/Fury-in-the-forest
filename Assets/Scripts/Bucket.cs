@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 public class Bucketscript : MonoBehaviour
 {
     public bool hasWater;
     public bool filableWater;
     public bool isNearTree;
-    public Tree currentTree;
+    public Fire currentTree;
 
     public int bucketCharge;
     
@@ -34,9 +34,9 @@ public class Bucketscript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Tree"))
+        if (col.CompareTag("Flames"))
         {
-            currentTree = col.GetComponent<Tree>();
+            currentTree = col.GetComponent<Fire>();
             isNearTree = true; 
             
         }
@@ -49,7 +49,7 @@ public class Bucketscript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.CompareTag("Tree"))
+        if (col.CompareTag("Flames"))
         {
             isNearTree = false;
         }

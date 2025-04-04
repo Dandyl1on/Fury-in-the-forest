@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Land.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/FoxAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tree.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tree.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TreeFire.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TreeFire.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tilemap/LongFire.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemap/LongFire.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +23,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Heat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -113,7 +118,9 @@
       <workItem from="1743153766030" duration="6261000" />
       <workItem from="1743421946857" duration="3898000" />
       <workItem from="1743496698700" duration="4807000" />
-      <workItem from="1743595147474" duration="2223000" />
+      <workItem from="1743595147474" duration="2518000" />
+      <workItem from="1743755230140" duration="2313000" />
+      <workItem from="1743758483383" duration="545000" />
     </task>
     <servers />
   </component>

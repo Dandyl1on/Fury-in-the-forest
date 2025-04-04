@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 039b896ef486d2c4d8142e3e3280374d
+guid: 42952918676d10142bd1e380c04c3b84
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -105,7 +105,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 11
+        width: 44
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -117,72 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 7d0f34109e3ed52f0800000000000000
       internalID: -982378553808785193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LongFire_1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ee494b322d08ce469fb1e27f4dcde13
-      internalID: -2081137826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LongFire_2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 603e2ab3515ec7e4aa728a4a2217f799
-      internalID: 2019191955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LongFire_3
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 417ef7a380d4a114dbcbce0ac3753d37
-      internalID: 1585223441
       vertices: []
       indices: 
       edges: []
@@ -202,9 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       LongFire_0: -982378553808785193
-      LongFire_1: -2081137826
-      LongFire_2: 2019191955
-      LongFire_3: 1585223441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
