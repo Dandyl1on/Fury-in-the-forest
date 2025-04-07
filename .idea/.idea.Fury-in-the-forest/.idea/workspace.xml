@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bucket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bucket.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BucketEmpty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BucketEmpty.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BucketHalfEmpty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BucketHalfEmpty.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +113,7 @@
       <workItem from="1743755230140" duration="2313000" />
       <workItem from="1743758483383" duration="1517000" />
       <workItem from="1744023713662" duration="3921000" />
+      <workItem from="1744050302266" duration="330000" />
     </task>
     <servers />
   </component>
