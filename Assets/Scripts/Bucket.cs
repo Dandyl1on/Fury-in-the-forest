@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -9,7 +10,10 @@ public class Bucketscript : MonoBehaviour
     public Fire currentTree;
 
     public int bucketCharge;
-    
+    public SpriteRenderer Bucket;
+    public Sprite Empty;
+    public Sprite Half;
+    public Sprite Full;
     
     // Update is called once per frame
     void Update()
@@ -19,16 +23,19 @@ public class Bucketscript : MonoBehaviour
         {
             hasWater = true;
             bucketCharge = 2;
+            Bucket.sprite = Full;
         }
         
         if (isNearTree && hasWater && Input.GetKeyDown(KeyCode.E))
         {
             currentTree.Extinguish(); 
             bucketCharge -= 1;
+            Bucket.sprite = Half;
             
             if (bucketCharge <= 0)
             {
                 hasWater = false;
+                Bucket.sprite = Empty;
             }
         }
     }

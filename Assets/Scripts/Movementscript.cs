@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -23,6 +24,8 @@ public class Playermovement : MonoBehaviour
     public Animator Animation;
     private Transform Player;
 
+    public GameObject ZiplineText;
+
     //below all are used for basic player stuff
     [SerializeField] private Rigidbody2D rb;
 
@@ -31,6 +34,7 @@ public class Playermovement : MonoBehaviour
         Animation = GetComponent<Animator>();
         Player = GetComponent<Transform>();
         InvokeRepeating(nameof(checkforIdle2), checkinterval, checkinterval);
+        ZiplineText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -102,6 +106,22 @@ public class Playermovement : MonoBehaviour
                 Falls = true;    
             }
             
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Zipline"))
+        {
+            ZiplineText.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Zipline"))
+        {
+            ZiplineText.SetActive(false);
         }
     }
 }

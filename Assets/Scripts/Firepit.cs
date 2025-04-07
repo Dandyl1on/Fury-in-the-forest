@@ -1,14 +1,16 @@
 using System;
 using UnityEngine;
 
+
 public class Firepit : MonoBehaviour
 {
     public Transform respawnPoint;
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (other.CompareTag("Player"))
+        if (col.CompareTag("FirePit"))
         {
-            other.transform.position = respawnPoint.position;
+            transform.position = respawnPoint.position;
         }
     }
 }
