@@ -10,6 +10,7 @@ public class Bucketscript : MonoBehaviour
 
     public int bucketCharge;
     
+    
     // Update is called once per frame
     void Update()
     {
