@@ -15,8 +15,10 @@ public class Playermovement : MonoBehaviour
     public float jumpPower;
     public bool grounded;
     public bool Falls;
-    private bool DoubleJump;
-    private int doubleJump;
+    public int doubleJump;
+
+    public float delayjump = 0.2f;
+    public bool hasJumped;
     
     public float idle2chance = 0.2f;
     public float checkinterval = 1f;
@@ -43,19 +45,37 @@ public class Playermovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(horizontalInput*speed, rb.linearVelocity.y);
         
-        // jumps the player according to its x direction and jump power (is in update to not miss button press)
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (grounded)
         {
-            //Debug.Log(DoubleJump);
-            Jump();
-            doubleJump = 1;
+            hasJumped = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && doubleJump == 1)
+        else
+        {
+            delayjump += Time.deltaTime;
+        }
+
+        // jumps the player according to its x direction and jump power (is in update to not miss button press)
+        if (Input.GetKeyDown(KeyCode.Space) && grounded && !Falls)
         {
             Jump();
-            doubleJump = 2;
+            
+            hasJumped = false;
         }
         
+        // delayed jump off cliff
+        if (Input.GetKeyDown(KeyCode.Space) && delayjump < 0.2f && Falls)
+        {
+            Jump();
+            
+        }
+        // double jump
+        if (Input.GetKeyDown(KeyCode.Space) && Falls && !hasJumped && delayjump > 0.2f) 
+        {
+            Jump();
+            hasJumped = true;
+            
+        }
+
         Animation.SetBool("IsMoving", horizontalInput !=0);
         Animation.SetBool("IsGround", grounded);
         Animation.SetBool("Falling", Falls);
@@ -94,6 +114,7 @@ public class Playermovement : MonoBehaviour
             grounded = true;
             Falls = false;
             doubleJump = 0;
+            delayjump = 0f;
         }
     }
 
@@ -101,11 +122,11 @@ public class Playermovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Ground")
         {
-            if (grounded && Animation.GetBool("ZipLine")==false)
+            grounded = false;
+            if (Animation.GetBool("ZipLine")==false)
             {
                 Falls = true;    
             }
-            
         }
     }
 
