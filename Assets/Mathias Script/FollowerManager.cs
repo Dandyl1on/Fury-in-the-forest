@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowerManager : MonoBehaviour
@@ -30,7 +30,14 @@ public class FollowerManager : MonoBehaviour
             }
 
             follower.StartFollowing();
+
+            // ✅ Add this line to sync animations
+            followerObj.GetComponent<FollowerAnimatorSync>()?.StartFollowing(player.transform);
+
             followers.Add(followerObj);
         }
     }
+
+
+
 }
