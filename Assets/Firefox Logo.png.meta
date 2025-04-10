@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7ea74feff68e83146abd02e64f7037a4
+guid: 381d5753e9f21cd45a81c10e6482675d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2267521691344690859
-    second: Firefox_0
+      213: 1927206669097316841
+    second: Firefox Logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 10
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Firefox_0
+      name: Firefox Logo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baed715e6fad77f10800000000000000
-      internalID: 2267521691344690859
+      spriteID: 9e13f483140deba10800000000000000
+      internalID: 1927206669097316841
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Firefox_0: 2267521691344690859
+      Firefox Logo_0: 1927206669097316841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

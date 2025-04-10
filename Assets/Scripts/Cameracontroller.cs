@@ -8,8 +8,10 @@ public class Cameracontroller : MonoBehaviour
     [SerializeField] private float cameraSpeed;
     public ZiplineScript zipline;
     public bool OnZipline;
+    public Playermovement player;
 
     private float lookAHead;
+    private float lookLow;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +34,18 @@ public class Cameracontroller : MonoBehaviour
             float targetY = Mathf.Lerp(transform.position.y, Player.position.y - 1.5f, Time.deltaTime * cameraSpeed);
             transform.position = new Vector3(targetX, targetY, transform.position.z);
             // transform.position = Vector3.Lerp(transform.position, new Vector3(Player.position.x*1.5f, Player.position.y-2, transform.position.z), Time.deltaTime * cameraSpeed);
+        }
+
+        if (player.lookDown)
+        {
+            lookLow = Mathf.Lerp(lookLow, distance, Time.deltaTime * cameraSpeed);
+            transform.position = new Vector3(Player.position.x+lookAHead, Player.position.y - lookLow,
+                transform.position.z);
+        }
+        else
+        {
+            // Reset smoothly when not looking down
+            lookLow = Mathf.Lerp(lookLow, 0f+lookAHead, Time.deltaTime * cameraSpeed);
         }
     }
 }

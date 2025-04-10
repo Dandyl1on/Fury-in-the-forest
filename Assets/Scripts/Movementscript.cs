@@ -15,10 +15,10 @@ public class Playermovement : MonoBehaviour
     public float jumpPower;
     public bool grounded;
     public bool Falls;
-    public int doubleJump;
+
 
     public float delayjump = 0.2f;
-    public bool hasJumped;
+    public bool doubleJump;
     
     public float idle2chance = 0.2f;
     public float checkinterval = 1f;
@@ -27,6 +27,11 @@ public class Playermovement : MonoBehaviour
     private Transform Player;
 
     public GameObject ZiplineText;
+
+    public bool lookDown;
+
+    public AudioClip jumpSound;
+    private AudioSource Audio;
 
     //below all are used for basic player stuff
     [SerializeField] private Rigidbody2D rb;
@@ -37,49 +42,50 @@ public class Playermovement : MonoBehaviour
         Player = GetComponent<Transform>();
         InvokeRepeating(nameof(checkforIdle2), checkinterval, checkinterval);
         ZiplineText.SetActive(false);
+        Audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(horizontalInput*speed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
+        
+        Animation.SetBool("IsMoving", horizontalInput != 0);
+        Animation.SetBool("IsGround", grounded);
+        Falls = rb.linearVelocity.y < -0.1f && !grounded;
+        Animation.SetBool("Falling", Falls);
+        
         
         if (grounded)
         {
-            hasJumped = false;
+            doubleJump = false;
         }
         else
         {
             delayjump += Time.deltaTime;
         }
-
-        // jumps the player according to its x direction and jump power (is in update to not miss button press)
+        
         if (Input.GetKeyDown(KeyCode.Space) && grounded && !Falls)
         {
             Jump();
-            
-            hasJumped = false;
+            doubleJump = false;
         }
-        
+
         // delayed jump off cliff
         if (Input.GetKeyDown(KeyCode.Space) && delayjump < 0.2f && Falls)
         {
             Jump();
-            
-        }
-        // double jump
-        if (Input.GetKeyDown(KeyCode.Space) && Falls && !hasJumped && delayjump > 0.2f) 
-        {
-            Jump();
-            hasJumped = true;
-            
         }
 
-        Animation.SetBool("IsMoving", horizontalInput !=0);
-        Animation.SetBool("IsGround", grounded);
-        Animation.SetBool("Falling", Falls);
-        
+        // double jump
+        if (Input.GetKeyDown(KeyCode.Space) && !doubleJump && delayjump > 0.2f)
+        {
+            Jump();
+            doubleJump = true;
+
+        }
+        //Rotates the sprite correctly
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
@@ -88,33 +94,38 @@ public class Playermovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-    }
-
-    void checkforIdle2()
-    {
-        if (UnityEngine.Random.value < idle2chance)
+        //looks down on key press
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            Animation.SetTrigger("Idle2");
+            lookDown = true;
         }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            lookDown = false;
+        }
+        
     }
 
-    
     void Jump()
     {
         Animation.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-        grounded = false;
+        Audio.clip = jumpSound;
+        Audio.Play();
     }
 
-    // returns a true or false depending on if the overlap circle is well overlapping with the ground layer integer on the layer list (set this in the editor)
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Ground")
         {
             grounded = true;
             Falls = false;
-            doubleJump = 0;
             delayjump = 0f;
+        }
+
+        if (col.gameObject.tag == "Zipline")
+        {
+            ZiplineText.SetActive(true);
         }
     }
 
@@ -123,26 +134,18 @@ public class Playermovement : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             grounded = false;
-            if (Animation.GetBool("ZipLine")==false)
-            {
-                Falls = true;    
-            }
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Zipline"))
-        {
-            ZiplineText.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Zipline"))
+        if (other.gameObject.tag== "Zipline")
         {
             ZiplineText.SetActive(false);
+        }
+    }
+
+    void checkforIdle2()
+    {
+        if (UnityEngine.Random.value < idle2chance)
+        {
+            Animation.SetTrigger("Idle2");
         }
     }
 }
