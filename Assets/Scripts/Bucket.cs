@@ -1,6 +1,9 @@
+using System;
+using System.Net.Mime;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Bucketscript : MonoBehaviour
@@ -16,8 +19,15 @@ public class Bucketscript : MonoBehaviour
     public Sprite Half;
     public Sprite Full;
 
-    public TextMeshProUGUI Buckettext;
-    
+    public Image Bucketmeter1;
+    public Image Bucketmeter2;
+
+    private void Start()
+    {
+        Bucketmeter1.enabled = false;
+        Bucketmeter2.enabled = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -27,7 +37,8 @@ public class Bucketscript : MonoBehaviour
             hasWater = true;
             bucketCharge = 2;
             Bucket.sprite = Full;
-            Buckettext.text = "Bucket charge: " + bucketCharge;
+            Bucketmeter1.enabled = true;
+            Bucketmeter2.enabled = true;
         }
         
         if (isNearTree && hasWater && Input.GetKeyDown(KeyCode.E))
@@ -35,14 +46,15 @@ public class Bucketscript : MonoBehaviour
             currentTree.Extinguish(); 
             bucketCharge -= 1;
             Bucket.sprite = Half;
-            Buckettext.text = "Bucket charge: " + bucketCharge;
+            Bucketmeter2.enabled = false;
             
             
             if (bucketCharge <= 0)
             {
                 hasWater = false;
                 Bucket.sprite = Empty;
-                Buckettext.text = "Bucket charge: " + bucketCharge;
+                Bucketmeter1.enabled = false;
+
             }
         }
     }

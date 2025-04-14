@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 
@@ -18,7 +19,7 @@ public class Firepit : MonoBehaviour
         if (col.CompareTag("FirePit"))
         {
             playsound();
-            transform.position = respawnPoint.position;
+            StartCoroutine(Death());
         }
     }
     void playsound()
@@ -27,6 +28,12 @@ public class Firepit : MonoBehaviour
         AudioClip death = DeathSound[index];
         Audio.clip = death;
         Audio.Play();
+    }
+
+    IEnumerator Death()
+    {
+        yield return new WaitForSeconds(0.3f);
+        transform.position = respawnPoint.position;
     }
     
 }

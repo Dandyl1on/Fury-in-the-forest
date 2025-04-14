@@ -1,11 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class Playermovement : MonoBehaviour
 {   
@@ -14,19 +10,18 @@ public class Playermovement : MonoBehaviour
     public float speed = 8f;
     public float jumpPower;
     public bool grounded;
-    public bool Falls;
+    public bool falls;
 
 
-    public float delayjump = 0.2f;
+    public float delayJump = 0.2f;
     public bool doubleJump;
     
-    public float idle2chance = 0.2f;
-    public float checkinterval = 1f;
+    public float idle2Chance = 0.2f;
+    public float checkInterval = 1f;
 
     public Animator Animation;
-    private Transform Player;
 
-    public GameObject ZiplineText;
+    public GameObject ziplineText;
 
     public bool lookDown;
 
@@ -39,9 +34,8 @@ public class Playermovement : MonoBehaviour
     private void Start()
     {
         Animation = GetComponent<Animator>();
-        Player = GetComponent<Transform>();
-        InvokeRepeating(nameof(checkforIdle2), checkinterval, checkinterval);
-        ZiplineText.SetActive(false);
+        InvokeRepeating(nameof(CheckForIdle2), checkInterval, checkInterval);
+        ziplineText.SetActive(false);
         Audio = GetComponent<AudioSource>();
     }
 
@@ -53,8 +47,8 @@ public class Playermovement : MonoBehaviour
         
         Animation.SetBool("IsMoving", horizontalInput != 0);
         Animation.SetBool("IsGround", grounded);
-        Falls = rb.linearVelocity.y < -0.1f && !grounded;
-        Animation.SetBool("Falling", Falls);
+        falls = rb.linearVelocity.y < -0.1f && !grounded;
+        Animation.SetBool("Falling", falls);
         
         
         if (grounded)
@@ -63,23 +57,23 @@ public class Playermovement : MonoBehaviour
         }
         else
         {
-            delayjump += Time.deltaTime;
+            delayJump += Time.deltaTime;
         }
         
-        if (Input.GetKeyDown(KeyCode.Space) && grounded && !Falls)
+        if (Input.GetKeyDown(KeyCode.Space) && grounded && !falls)
         {
             Jump();
             doubleJump = false;
         }
 
         // delayed jump off cliff
-        if (Input.GetKeyDown(KeyCode.Space) && delayjump < 0.2f && Falls)
+        if (Input.GetKeyDown(KeyCode.Space) && delayJump < 0.2f && falls)
         {
             Jump();
         }
 
         // double jump
-        if (Input.GetKeyDown(KeyCode.Space) && !doubleJump && delayjump > 0.2f)
+        if (Input.GetKeyDown(KeyCode.Space) && !doubleJump && delayJump > 0.2f)
         {
             Jump();
             doubleJump = true;
@@ -116,16 +110,16 @@ public class Playermovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Ground")
+        if (col.gameObject.CompareTag("Ground"))
         {
             grounded = true;
-            Falls = false;
-            delayjump = 0f;
+            falls = false;
+            delayJump = 0f;
         }
 
-        if (col.gameObject.tag == "Zipline")
+        if (col.gameObject.CompareTag("Zipline"))
         {
-            ZiplineText.SetActive(true);
+            ziplineText.SetActive(true);
         }
     }
 
@@ -137,13 +131,22 @@ public class Playermovement : MonoBehaviour
         }
         if (other.gameObject.tag== "Zipline")
         {
-            ZiplineText.SetActive(false);
+            ziplineText.SetActive(false);
         }
     }
 
-    void checkforIdle2()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (UnityEngine.Random.value < idle2chance)
+        if (col.gameObject.CompareTag("Win"))
+        {
+            Debug.Log("Winner");
+            SceneManager.LoadScene(0);
+        }
+    }
+
+    void CheckForIdle2()
+    {
+        if (Random.value < idle2Chance)
         {
             Animation.SetTrigger("Idle2");
         }

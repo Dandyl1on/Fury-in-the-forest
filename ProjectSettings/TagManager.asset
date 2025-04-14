@@ -9,6 +9,7 @@ TagManager:
   - Flames
   - FirePit
   - Zipline
+  - Win
   layers:
   - Default
   - TransparentFX

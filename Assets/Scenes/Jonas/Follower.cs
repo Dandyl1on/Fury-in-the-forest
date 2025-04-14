@@ -22,6 +22,7 @@ public class Follower : MonoBehaviour
     // Idle2
     private float idle2Chance = 0.2f;
     private float idle2CheckInterval = 3f;
+    
 
     void Start()
     {
@@ -69,7 +70,7 @@ public class Follower : MonoBehaviour
     // ===============================
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isSaved && other.CompareTag(playerTag))
+        if (!isSaved && other.gameObject.CompareTag("Player"))
         {
             isSaved = true;
 
