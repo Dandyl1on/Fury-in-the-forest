@@ -31,6 +31,8 @@ public class Playermovement : MonoBehaviour
     //below all are used for basic player stuff
     [SerializeField] private Rigidbody2D rb;
 
+    public bool pressE;
+
     private void Start()
     {
         Animation = GetComponent<Animator>();
@@ -97,6 +99,16 @@ public class Playermovement : MonoBehaviour
         {
             lookDown = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            pressE = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            pressE = false;
+        }
         
     }
 
@@ -141,6 +153,16 @@ public class Playermovement : MonoBehaviour
         {
             Debug.Log("Winner");
             SceneManager.LoadScene(0);
+        }
+
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Sign"))
+        {
+            
         }
     }
 

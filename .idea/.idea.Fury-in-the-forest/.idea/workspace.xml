@@ -6,16 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firefox Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firefox Logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firefox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Firefox.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/MIXONE SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MIXONE SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bucket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movementscript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/button.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +129,7 @@
       <workItem from="1744191783504" duration="2393000" />
       <workItem from="1744274021577" duration="11614000" />
       <workItem from="1744358164213" duration="5775000" />
+      <workItem from="1744620589004" duration="11296000" />
     </task>
     <servers />
   </component>

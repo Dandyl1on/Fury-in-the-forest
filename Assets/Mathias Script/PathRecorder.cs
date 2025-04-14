@@ -6,7 +6,7 @@ public class PathRecorder : MonoBehaviour
     public static PathRecorder Instance;
 
     public float recordInterval = 0.02f;
-    public int maxPoints = 5000;
+    public int maxPoints = 50;
 
     [HideInInspector] public List<Vector2> recordedPath = new List<Vector2>();
 

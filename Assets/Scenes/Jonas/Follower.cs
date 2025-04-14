@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class Follower : MonoBehaviour
@@ -13,21 +12,16 @@ public class Follower : MonoBehaviour
 
     [Header("Interaction")]
     public string playerTag = "Player";
-    private bool isSaved = false;
+
+    public Playermovement Playermovement;
 
     [Header("Animation")]
     private Animator myAnimator;
     private Animator foxAnimator;
-
-    // Idle2
-    private float idle2Chance = 0.2f;
-    private float idle2CheckInterval = 3f;
     
-
     void Start()
     {
         myAnimator = GetComponent<Animator>();
-        InvokeRepeating(nameof(CheckIdle2), idle2CheckInterval, idle2CheckInterval);
     }
 
     void Update()
@@ -68,12 +62,10 @@ public class Follower : MonoBehaviour
     // ===============================
     // INTERACTION
     // ===============================
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (!isSaved && other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && Playermovement.pressE)
         {
-            isSaved = true;
-
             // Add to FollowerManager
             FollowerManager.Instance.AddFollower(gameObject);
 
@@ -105,17 +97,6 @@ public class Follower : MonoBehaviour
         if (foxAnimator.GetCurrentAnimatorStateInfo(0).IsName(triggerName))
         {
             myAnimator.SetTrigger(triggerName);
-        }
-    }
-
-    // ===============================
-    // IDLE2 SUPPORT
-    // ===============================
-    void CheckIdle2()
-    {
-        if (!isFollowing && Random.value < idle2Chance)
-        {
-            myAnimator.SetTrigger("Idle2");
         }
     }
 }
