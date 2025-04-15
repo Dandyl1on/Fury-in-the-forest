@@ -35595,11 +35595,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1493336864318012126, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.13
+      value: -1.76
       objectReference: {fileID: 0}
     - target: {fileID: 1493336864318012126, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 1493336864318012126, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35649,6 +35649,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -515673417
       objectReference: {fileID: 0}
+    - target: {fileID: 7592269212092066373, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 993390813}
+    - target: {fileID: 7592269212092066373, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1887681538}
     - target: {fileID: 7592269212092066373, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: Playermovement
       value: 
@@ -40785,6 +40793,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.8372421, y: 3.2739644}
   m_EdgeRadius: 0
+--- !u!50 &993390813 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1901331635072111047, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
+  m_PrefabInstance: {fileID: 287441755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &994592973
 GameObject:
   m_ObjectHideFlags: 0
@@ -47362,11 +47375,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d32a6baecf64a04aaca9c53bf3699e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   targetToFollow: {fileID: 1887681520}
   followSpeed: 8
   followDelay: 0.5
   playerTag: Player
   Playermovement: {fileID: 1887681538}
+  rb: {fileID: 0}
 --- !u!1 &1133946342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2074240982200963426, guid: 5de99f133a8c9ae4cb9cde3d200dcc69, type: 3}

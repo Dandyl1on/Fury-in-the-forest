@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class Follower : MonoBehaviour
 {
+    public Playermovement Player;
     [Header("Following")]
     public Transform targetToFollow;
     public float followSpeed = 8f;
-    public float followDelay = 0.5f;
+    public float followDelay = 0.2f;
     private bool isFollowing = false;
     private int pathIndexOffset;
 
@@ -18,10 +19,12 @@ public class Follower : MonoBehaviour
     [Header("Animation")]
     private Animator myAnimator;
     private Animator foxAnimator;
-    
+
+    public Rigidbody2D rb;
     void Start()
     {
         myAnimator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -30,6 +33,7 @@ public class Follower : MonoBehaviour
 
         FollowPath();
         SyncAnimations();
+        
     }
 
     // ===============================
@@ -43,13 +47,35 @@ public class Follower : MonoBehaviour
         if (index >= 0 && index < path.Count)
         {
             Vector2 targetPos = path[index];
-            transform.position = Vector2.MoveTowards(transform.position, targetPos, followSpeed * Time.deltaTime);
+            Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
+            float distance = Vector2.Distance(transform.position, targetPos);
+
+            if (distance < 0.5f)
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
+            else
+            {
+                rb.linearVelocity = direction * followSpeed;
+            }
+            
+            
+            if (Player.transform.localScale.x == 1)
+                transform.localScale = Vector3.one;
+            else if (Player.transform.localScale.x == -1)
+                transform.localScale = new Vector3(-1, 1, 1);
+            
+            /*transform.position = Vector2.MoveTowards(transform.position, targetPos, followSpeed * Time.deltaTime);
 
             // Face direction
             if (targetPos.x > transform.position.x)
                 transform.localScale = Vector3.one;
             else if (targetPos.x < transform.position.x)
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-1, 1, 1);*/
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
         }
     }
 
