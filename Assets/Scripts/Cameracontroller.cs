@@ -12,20 +12,41 @@ public class Cameracontroller : MonoBehaviour
 
     private float lookAHead;
     private float lookLow;
+    private float lookUp;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    private float lookOffsetY;
+    
     // Update is called once per frame
     void Update()
     {
-        if (!OnZipline) // Only follow normally if not on a zipline
+        float targetX = Player.position.x;
+        float targetY = Player.position.y+2f;
+
+        if (OnZipline)
         {
-            transform.position = new Vector3(Player.position.x + lookAHead, Player.position.y, transform.position.z); 
-            lookAHead = Mathf.Lerp(lookAHead, (distance * Player.localScale.x), Time.deltaTime * cameraSpeed);
+            targetX = Mathf.Lerp(transform.position.x, Player.position.x + 2f, Time.deltaTime * cameraSpeed);
+            targetY = Mathf.Lerp(transform.position.y, Player.position.y - 1.5f, Time.deltaTime * cameraSpeed);
+        }
+        else
+        {
+            float targetOffSet = 0f;
+            if (player.lookDown)
+            {
+                targetOffSet -= distance;
+            }
+            else if(player.lookUp)
+            {
+                targetOffSet = distance;
+            }
+
+            lookOffsetY = Mathf.Lerp(lookOffsetY, targetOffSet, Time.deltaTime * cameraSpeed);
+            targetY += lookOffsetY;
+        }
+        transform.position = new Vector3(targetX, targetY, transform.position.z);
+        
+        /*if (!OnZipline) // Only follow normally if not on a zipline
+        {
+            
         }
         else
         {
@@ -33,7 +54,7 @@ public class Cameracontroller : MonoBehaviour
             float targetX = Mathf.Lerp(transform.position.x, Player.position.x + 2f, Time.deltaTime * cameraSpeed);
             float targetY = Mathf.Lerp(transform.position.y, Player.position.y - 1.5f, Time.deltaTime * cameraSpeed);
             transform.position = new Vector3(targetX, targetY, transform.position.z);
-            // transform.position = Vector3.Lerp(transform.position, new Vector3(Player.position.x*1.5f, Player.position.y-2, transform.position.z), Time.deltaTime * cameraSpeed);
+           
         }
 
         if (player.lookDown)
@@ -47,5 +68,17 @@ public class Cameracontroller : MonoBehaviour
             // Reset smoothly when not looking down
             lookLow = Mathf.Lerp(lookLow, 0f+lookAHead, Time.deltaTime * cameraSpeed);
         }
+        
+        if (player.lookUp)
+        {
+            lookUp = Mathf.Lerp(lookUp, distance, Time.deltaTime * cameraSpeed);
+            transform.position = new Vector3(Player.position.x+lookAHead, Player.position.y + lookUp,
+                transform.position.z);
+        }
+        else
+        {
+            // Reset smoothly when not looking down
+            lookUp = Mathf.Lerp(lookUp, 0f+lookAHead, Time.deltaTime * cameraSpeed);
+        }*/
     }
 }

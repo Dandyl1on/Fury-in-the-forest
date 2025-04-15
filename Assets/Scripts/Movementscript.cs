@@ -11,8 +11,7 @@ public class Playermovement : MonoBehaviour
     public float jumpPower;
     public bool grounded;
     public bool falls;
-
-
+    
     public float delayJump = 0.2f;
     public bool doubleJump;
     
@@ -24,6 +23,7 @@ public class Playermovement : MonoBehaviour
     public GameObject ziplineText;
 
     public bool lookDown;
+    public bool lookUp;
 
     public AudioClip jumpSound;
     private AudioSource Audio;
@@ -99,12 +99,20 @@ public class Playermovement : MonoBehaviour
         {
             lookDown = false;
         }
-
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            lookUp = true;
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            lookUp = false;
+        }
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             pressE = true;
         }
-
         if (Input.GetKeyUp(KeyCode.E))
         {
             pressE = false;
@@ -156,14 +164,6 @@ public class Playermovement : MonoBehaviour
         }
 
         
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Sign"))
-        {
-            
-        }
     }
 
     void CheckForIdle2()

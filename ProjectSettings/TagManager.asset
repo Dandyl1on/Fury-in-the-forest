@@ -11,6 +11,8 @@ TagManager:
   - Zipline
   - Win
   - Sign
+  - Rescue sign
+  - Fire sign
   layers:
   - Default
   - TransparentFX
