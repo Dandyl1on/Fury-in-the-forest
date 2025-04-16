@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/Cat/Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Bucket.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/Bucket.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/BucketEmpty.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations Animals/BenjaminAnimations/BucketEmpty.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +127,7 @@
       <workItem from="1744620589004" duration="11463000" />
       <workItem from="1744702197672" duration="7267000" />
       <workItem from="1744715504875" duration="2453000" />
+      <workItem from="1744792046520" duration="6456000" />
     </task>
     <servers />
   </component>

@@ -9,10 +9,8 @@ public class Heat : MonoBehaviour
     public float IncreaseHeat;
     public float DecreaseHeat;
 
-    
-    
-
     public Transform respawn;
+    public bool beginHeat;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +22,17 @@ public class Heat : MonoBehaviour
 
     private void Update()
     {
-        HeatSlider.value += Time.deltaTime * 0.5f;
+        if (beginHeat)
+        {
+            HeatSlider.value += 4.5f * Time.deltaTime;
+        }
+        
+        if (HeatSlider.value == HeatSlider.maxValue)
+        {
+            transform.position = respawn.position;
+            beginHeat = false;
+            HeatSlider.value = 0f;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -32,11 +40,11 @@ public class Heat : MonoBehaviour
         
         if (other.CompareTag("Flames"))
         {
-            HeatSlider.value+= Time.deltaTime * IncreaseHeat;
+            HeatSlider.value += IncreaseHeat * Time.deltaTime;
             if (HeatSlider.value == HeatSlider.maxValue)
             {
-                
                 transform.position = respawn.position;
+                beginHeat = false;
                 HeatSlider.value = 0f;
             }
         }
@@ -44,6 +52,14 @@ public class Heat : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             HeatSlider.value-= Time.deltaTime * DecreaseHeat;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Heat begin"))
+        {
+            beginHeat = true;
         }
     }
 }

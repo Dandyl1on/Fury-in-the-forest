@@ -9,6 +9,7 @@ public class Firepit : MonoBehaviour
     public Transform respawnPoint;
     public AudioClip[] DeathSound;
     private AudioSource Audio;
+    public Heat Heat;
     private void Start()
     {
         Audio = GetComponent<AudioSource>();
@@ -34,6 +35,9 @@ public class Firepit : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         transform.position = respawnPoint.position;
+        Heat.beginHeat = false;
+        Heat.HeatSlider.value = 0f;
+
     }
     
 }
