@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foxMenu: {fileID: 378451952}
-  ZZZ: {fileID: 1322136234}
+  zzz: {fileID: 1322136234}
 --- !u!1 &1652373941
 GameObject:
   m_ObjectHideFlags: 0
