@@ -49,7 +49,7 @@ public class SignController : MonoBehaviour
         if (other.CompareTag("Fire sign"))
         {
             toolText.enabled = true;
-            toolText.text = "Find a pool of water and press E to get a full Bucket 'o Water so you can throw it on the fire by standing near it and pressing E";
+            toolText.text = "Get water by pressing E in a pond to extinguish fire";
             S.enabled = true;
             S.sprite = E;
         }
@@ -57,16 +57,6 @@ public class SignController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        /*if (other.CompareTag("Sign"))
-        {
-            toolText.enabled = false;
-            A.enabled = false;
-            D.enabled = false;
-            W.enabled = false;
-            S.enabled = false;
-            Space.enabled = false;
-        }*/
-
         toolText.enabled = false;
         A.enabled = false;
         D.enabled = false;
