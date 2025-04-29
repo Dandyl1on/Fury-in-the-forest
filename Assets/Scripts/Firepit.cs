@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Firepit : MonoBehaviour
@@ -34,9 +35,7 @@ public class Firepit : MonoBehaviour
     IEnumerator Death()
     {
         yield return new WaitForSeconds(0.3f);
-        transform.position = respawnPoint.position;
-        Heat.beginHeat = false;
-        Heat.HeatSlider.value = 0f;
+        SceneManager.LoadScene(1);
 
     }
     
