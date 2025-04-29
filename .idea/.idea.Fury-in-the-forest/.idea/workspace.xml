@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" afterDir="false" />
-    </list>
+    <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +131,7 @@
       <workItem from="1744792046520" duration="6456000" />
       <workItem from="1745313510280" duration="11692000" />
       <workItem from="1745396709361" duration="5224000" />
-      <workItem from="1745916715464" duration="8226000" />
+      <workItem from="1745916715464" duration="8566000" />
     </task>
     <servers />
   </component>

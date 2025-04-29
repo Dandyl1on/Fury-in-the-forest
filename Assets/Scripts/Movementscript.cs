@@ -140,10 +140,21 @@ public class Playermovement : MonoBehaviour
             falls = false;
             delayJump = 0f;
         }
+    }
 
-        if (col.gameObject.CompareTag("Zipline"))
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Zipline"))
         {
             ziplineText.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Zipline"))
+        {
+            ziplineText.SetActive(false);
         }
     }
 
@@ -152,10 +163,6 @@ public class Playermovement : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             grounded = false;
-        }
-        if (other.gameObject.tag== "Zipline")
-        {
-            ziplineText.SetActive(false);
         }
     }
     
