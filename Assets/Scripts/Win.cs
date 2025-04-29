@@ -36,6 +36,7 @@ public class Win : MonoBehaviour
             Destroy(heattext);
             Heat.enabled = false;
             Playermovement.enabled = false;
+            canvasaudio.loop = false;
             canvasaudio.clip = winneraudio;
             canvasaudio.volume = 0.5f;
             canvasaudio.Play();

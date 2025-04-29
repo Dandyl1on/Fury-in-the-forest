@@ -23,7 +23,7 @@ public class Firepit : MonoBehaviour
             StartCoroutine(Death());
         }
     }
-    void playsound()
+    public void playsound()
     {
         int index = UnityEngine.Random.Range(0, DeathSound.Length);
         AudioClip death = DeathSound[index];

@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Heat : MonoBehaviour
@@ -8,9 +9,9 @@ public class Heat : MonoBehaviour
     public Slider HeatSlider;
     public float IncreaseHeat;
     public float DecreaseHeat;
-
-    public Transform respawn;
+    
     public bool beginHeat;
+    public Firepit Firepit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,9 +30,7 @@ public class Heat : MonoBehaviour
         
         if (HeatSlider.value == HeatSlider.maxValue)
         {
-            transform.position = respawn.position;
-            beginHeat = false;
-            HeatSlider.value = 0f;
+            SceneManager.LoadScene(1);
         }
     }
 
@@ -43,9 +42,8 @@ public class Heat : MonoBehaviour
             HeatSlider.value += IncreaseHeat * Time.deltaTime;
             if (HeatSlider.value == HeatSlider.maxValue)
             {
-                transform.position = respawn.position;
-                beginHeat = false;
-                HeatSlider.value = 0f;
+                Firepit.playsound();
+                SceneManager.LoadScene(1);
             }
         }
 
