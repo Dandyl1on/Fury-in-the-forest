@@ -34319,7 +34319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478830547108200548, guid: fb131d3bca04b7042b24ce76a37d8ad3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.3
+      value: 6.059
       objectReference: {fileID: 0}
     - target: {fileID: 1478830547108200548, guid: fb131d3bca04b7042b24ce76a37d8ad3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56151,8 +56151,8 @@ MonoBehaviour:
   HeatSlider: {fileID: 643177631}
   IncreaseHeat: 6
   DecreaseHeat: 50
-  respawn: {fileID: 1258821119}
   beginHeat: 0
+  Firepit: {fileID: 0}
 --- !u!114 &1887681535
 MonoBehaviour:
   m_ObjectHideFlags: 0
