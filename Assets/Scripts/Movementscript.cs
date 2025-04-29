@@ -25,13 +25,15 @@ public class Playermovement : MonoBehaviour
     public bool lookDown;
     public bool lookUp;
 
-    public AudioClip jumpSound;
+    public AudioClip[] jumpSound;
     private AudioSource Audio;
 
     //below all are used for basic player stuff
     [SerializeField] private Rigidbody2D rb;
 
     public bool pressE;
+
+
 
     private void Start()
     {
@@ -124,7 +126,9 @@ public class Playermovement : MonoBehaviour
     {
         Animation.SetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-        Audio.clip = jumpSound;
+        int index = UnityEngine.Random.Range(0, jumpSound.Length);
+        AudioClip jump = jumpSound[index];
+        Audio.clip = jump;
         Audio.Play();
     }
 
@@ -154,17 +158,7 @@ public class Playermovement : MonoBehaviour
             ziplineText.SetActive(false);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("Win"))
-        {
-            Debug.Log("Winner");
-            SceneManager.LoadScene(0);
-        }
-
-        
-    }
+    
 
     void CheckForIdle2()
     {
