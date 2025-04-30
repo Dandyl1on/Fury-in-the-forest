@@ -29,7 +29,7 @@ public class FollowerInteractable : MonoBehaviour
 
             if (follower != null)
             {
-                follower.StartFollowing(); // ✅ Triggers hop first, then follows
+                //follower.StartFollowing(); // ✅ Triggers hop first, then follows
                 FollowerManager.Instance.AddFollower(this.gameObject);
             }
         }

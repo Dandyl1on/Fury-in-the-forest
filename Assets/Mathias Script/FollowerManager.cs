@@ -29,9 +29,9 @@ public class FollowerManager : MonoBehaviour
                 follower.targetToFollow = followers[followers.Count - 1].transform;
             }
 
-            follower.StartFollowing();
+            follower.StartFollowing(followers.Count + 1); // +1 so first follower gets delay
 
-            // ✅ Add this line to sync animations
+            // Optional: animation sync
             followerObj.GetComponent<FollowerAnimatorSync>()?.StartFollowing(player.transform);
 
             followers.Add(followerObj);

@@ -34364,7 +34364,11 @@ PrefabInstance:
     - target: {fileID: 1706664988526927815, guid: fb131d3bca04b7042b24ce76a37d8ad3, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 1258821119}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706664988526927815, guid: fb131d3bca04b7042b24ce76a37d8ad3, type: 3}
+      propertyPath: followDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1706664988526927815, guid: fb131d3bca04b7042b24ce76a37d8ad3, type: 3}
       propertyPath: Playermovement
       value: 
@@ -35025,11 +35029,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1493336864318012126, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.25
+      value: -7.41
       objectReference: {fileID: 0}
     - target: {fileID: 1493336864318012126, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: 1493336864318012126, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35090,7 +35094,11 @@ PrefabInstance:
     - target: {fileID: 7592269212092066373, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: respawn
       value: 
-      objectReference: {fileID: 1258821119}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592269212092066373, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
+      propertyPath: followDelay
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 7592269212092066373, guid: 4628e83e3d09ec74c8467f64156403d4, type: 3}
       propertyPath: Playermovement
       value: 
@@ -36245,7 +36253,7 @@ PrefabInstance:
     - target: {fileID: 1554160193675380715, guid: 8c23c22c17cb6bf44ba50ea685604fff, type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 1258821119}
+      objectReference: {fileID: 0}
     - target: {fileID: 1554160193675380715, guid: 8c23c22c17cb6bf44ba50ea685604fff, type: 3}
       propertyPath: DeathSound.Array.size
       value: 6
@@ -45312,10 +45320,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1887681538}
-  respawn: {fileID: 1258821119}
+  respawn: {fileID: 0}
   targetToFollow: {fileID: 1887681520}
   followSpeed: 8
-  followDelay: 0.5
+  followDelay: 0.09
   playerTag: Player
   rb: {fileID: 1131295846}
 --- !u!50 &1131295846 stripped
@@ -45879,37 +45887,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &1258821118
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1258821119}
-  m_Layer: 0
-  m_Name: Respawn point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1258821119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258821118}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.4, y: -1.38, z: 0.022506325}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1263764190
 GameObject:
   m_ObjectHideFlags: 0
@@ -55756,7 +55733,7 @@ PrefabInstance:
     - target: {fileID: 1535207392461770846, guid: 11f7d6dbfa02d39419d5020c4d9c98d3, type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 1258821119}
+      objectReference: {fileID: 0}
     - target: {fileID: 2238362718890899516, guid: 11f7d6dbfa02d39419d5020c4d9c98d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.43881
@@ -55904,11 +55881,11 @@ PrefabInstance:
       objectReference: {fileID: 1887681520}
     - target: {fileID: 6729174733251233120, guid: a7748474c416c8e499b1f2a3d4195d71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.2
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 6729174733251233120, guid: a7748474c416c8e499b1f2a3d4195d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.057
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6729174733251233120, guid: a7748474c416c8e499b1f2a3d4195d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56045,11 +56022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5109135625581385083, guid: 2837c4dc501768741bcd354702e00720, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 92.5
+      value: -4.74
       objectReference: {fileID: 0}
     - target: {fileID: 5109135625581385083, guid: 2837c4dc501768741bcd354702e00720, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.9
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: 5109135625581385083, guid: 2837c4dc501768741bcd354702e00720, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56165,7 +56142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c25b96b69908f4f459a0b842dd652e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1258821119}
+  respawnPoint: {fileID: 0}
   DeathSound:
   - {fileID: 8300000, guid: a431a06facde48645b1bd21496e1ed97, type: 3}
   - {fileID: 8300000, guid: 11460145c87d53e4d8600ee98fcfa126, type: 3}
@@ -59012,7 +58989,7 @@ PrefabInstance:
     - target: {fileID: 1535207392461770846, guid: 11f7d6dbfa02d39419d5020c4d9c98d3, type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 1258821119}
+      objectReference: {fileID: 0}
     - target: {fileID: 2238362718890899516, guid: 11f7d6dbfa02d39419d5020c4d9c98d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.535637
@@ -59118,7 +59095,7 @@ PrefabInstance:
     - target: {fileID: 1554160193675380715, guid: 8c23c22c17cb6bf44ba50ea685604fff, type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 1258821119}
+      objectReference: {fileID: 0}
     - target: {fileID: 1554160193675380715, guid: 8c23c22c17cb6bf44ba50ea685604fff, type: 3}
       propertyPath: DeathSound.Array.size
       value: 6
@@ -59337,7 +59314,6 @@ SceneRoots:
   - {fileID: 287441755}
   - {fileID: 1876871648}
   - {fileID: 148792709}
-  - {fileID: 1258821119}
   - {fileID: 1933065432}
   - {fileID: 2003898256}
   - {fileID: 7061019330888498253}

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="" />
+    <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +139,8 @@
       <workItem from="1744792046520" duration="6456000" />
       <workItem from="1745313510280" duration="11692000" />
       <workItem from="1745396709361" duration="5224000" />
-      <workItem from="1745916715464" duration="8566000" />
+      <workItem from="1745916715464" duration="9324000" />
+      <workItem from="1746002035434" duration="2804000" />
     </task>
     <servers />
   </component>

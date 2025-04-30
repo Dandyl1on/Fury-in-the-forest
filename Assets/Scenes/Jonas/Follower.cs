@@ -4,7 +4,6 @@ using UnityEngine;
 public class Follower : MonoBehaviour
 {
     public Playermovement Player;
-    public Transform respawn;
     [Header("Following")]
     public Transform targetToFollow;
     public float followSpeed = 8f;
@@ -29,18 +28,8 @@ public class Follower : MonoBehaviour
 
     void Update()
     {
-        if (!isFollowing) return;
-        if (Player.transform.position == respawn.position)
-        {
-            transform.position = respawn.position;
-        }
-
-        if (Player.transform.position != respawn.position)
-        {
-            FollowPath();
-            SyncAnimations();
-        }
-        
+        FollowPath();
+        SyncAnimations(); 
     }
 
     // ===============================
@@ -49,39 +38,39 @@ public class Follower : MonoBehaviour
     void FollowPath()
     {
         var path = PathRecorder.Instance.recordedPath;
-        int index = Mathf.Min(pathIndexOffset, path.Count - 1);
+        int index = Mathf.Clamp(path.Count - pathIndexOffset - 1, 0, path.Count - 1);
 
-        if (index >= 0 && index < path.Count)
-        {
-            Vector2 targetPos = path[index];
-            Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
-            float distance = Vector2.Distance(transform.position, targetPos);
+        if (path.Count == 0 || index < 0) return;
 
-            if (distance < 0.5f)
-            {
-                rb.linearVelocity = Vector2.zero;
-            }
-            else
-            {
-                rb.linearVelocity = direction * followSpeed;
-            }
-            
-            
-            if (Player.transform.localScale.x == 1)
-                transform.localScale = Vector3.one;
-            else if (Player.transform.localScale.x == -1)
-                transform.localScale = new Vector3(-1, 1, 1);
-        }
-        else
+        Vector2 targetPos = path[index];
+        Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
+        float distance = Vector2.Distance(transform.position, targetPos);
+ 
+        if (distance < 0.1f)
         {
             rb.linearVelocity = Vector2.zero;
         }
+        else
+        {
+            rb.linearVelocity = direction * followSpeed;
+        }
+        if (path.Count < pathIndexOffset + 1)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return; // Not enough path yet
+        }
+
+        // Maintain orientation
+        if (Player.transform.localScale.x == 1)
+            transform.localScale = Vector3.one;
+        else if (Player.transform.localScale.x == -1)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 
-    public void StartFollowing()
+    public void StartFollowing(int orderline)
     {
         isFollowing = true;
-        pathIndexOffset = Mathf.RoundToInt(followDelay / PathRecorder.Instance.recordInterval);
+        pathIndexOffset = Mathf.RoundToInt((followDelay * orderline) / PathRecorder.Instance.recordInterval);
     }
 
     // ===============================
@@ -96,7 +85,7 @@ public class Follower : MonoBehaviour
 
             // Start animation syncing
             foxAnimator = other.GetComponent<Animator>();
-            StartFollowing();
+            //StartFollowing(3);
         }
     }
 

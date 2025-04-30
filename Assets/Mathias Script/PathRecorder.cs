@@ -5,12 +5,17 @@ public class PathRecorder : MonoBehaviour
 {
     public static PathRecorder Instance;
 
-    public float recordInterval = 0.02f;
+    //public float recordInterval = 0.02f;
     public int maxPoints = 50;
 
-    [HideInInspector] public List<Vector2> recordedPath = new List<Vector2>();
+    //[HideInInspector] public List<Vector2> recordedPath = new List<Vector2>();
 
-    private float timer = 0f;
+    //private float timer = 0f;
+    
+    public List<Vector2> recordedPath = new List<Vector2>();
+    public float recordInterval = 0.1f;
+
+    private float timer;
 
     void Awake()
     {
@@ -18,16 +23,15 @@ public class PathRecorder : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    
+
     void Update()
     {
         timer += Time.deltaTime;
         if (timer >= recordInterval)
         {
-            recordedPath.Insert(0, transform.position); // newest first
             timer = 0f;
-
-            if (recordedPath.Count > maxPoints)
-                recordedPath.RemoveAt(recordedPath.Count - 1);
+            recordedPath.Add(transform.position); // Must be player position
         }
     }
 }
