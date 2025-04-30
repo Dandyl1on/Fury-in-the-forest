@@ -28,15 +28,22 @@ public class Follower : MonoBehaviour
 
     void Update()
     {
-        FollowPath();
-        SyncAnimations(); 
+        if (isFollowing)
+        {
+            FollowPath();
+            SyncAnimations(); 
+        }
     }
 
     // ===============================
     // FOLLOWING THE FOX
     // ===============================
+    [SerializeField] private float stopDistance = 0.5f; // Prevent clumping
+
     void FollowPath()
     {
+        if (!isFollowing || PathRecorder.Instance == null) return;
+
         var path = PathRecorder.Instance.recordedPath;
         int index = Mathf.Clamp(path.Count - pathIndexOffset - 1, 0, path.Count - 1);
 
@@ -45,32 +52,43 @@ public class Follower : MonoBehaviour
         Vector2 targetPos = path[index];
         Vector2 direction = (targetPos - (Vector2)transform.position).normalized;
         float distance = Vector2.Distance(transform.position, targetPos);
- 
-        if (distance < 0.1f)
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
-        else
+
+        if (distance > stopDistance)
         {
             rb.linearVelocity = direction * followSpeed;
         }
-        if (path.Count < pathIndexOffset + 1)
+        else
         {
-            rb.linearVelocity = Vector2.zero;
-            return; // Not enough path yet
+            // Smooth vertical drop if in air and not aligned with player's Y
+            float yDiff = transform.position.y - Player.transform.position.y;
+
+            if (Mathf.Abs(yDiff) > 0.05f)
+            {
+                // Move vertically down/up to match player Y (if needed)
+                float verticalSpeed = Mathf.Sign(-yDiff) * followSpeed * 0.5f; // slower than regular follow speed
+                rb.linearVelocity = new Vector2(0, verticalSpeed);
+            }
+            else
+            {
+                // Aligned — stop moving
+                rb.linearVelocity = Vector2.zero;
+            }
         }
 
-        // Maintain orientation
+        // Flip
         if (Player.transform.localScale.x == 1)
             transform.localScale = Vector3.one;
         else if (Player.transform.localScale.x == -1)
             transform.localScale = new Vector3(-1, 1, 1);
     }
 
-    public void StartFollowing(int orderline)
+    public void StartFollowing(Transform target, int orderInLine)
     {
+        targetToFollow = target;
         isFollowing = true;
-        pathIndexOffset = Mathf.RoundToInt((followDelay * orderline) / PathRecorder.Instance.recordInterval);
+
+        // Stack delays: each follower adds delay based on order
+        pathIndexOffset = Mathf.RoundToInt((followDelay * orderInLine) / PathRecorder.Instance.recordInterval);
     }
 
     // ===============================
@@ -98,12 +116,12 @@ public class Follower : MonoBehaviour
 
         myAnimator.SetBool("IsMoving", foxAnimator.GetBool("IsMoving"));
         myAnimator.SetBool("IsGround", foxAnimator.GetBool("IsGround"));
-        myAnimator.SetBool("Falling", foxAnimator.GetBool("Falling"));
+        //myAnimator.SetBool("Falling", foxAnimator.GetBool("Falling"));
 
-        SyncTrigger("Jump");
-        SyncTrigger("Land");
-        SyncTrigger("TakingDamage");
-        SyncTrigger("Faint");
+        //SyncTrigger("Jump");
+        //SyncTrigger("Land");
+        //SyncTrigger("TakingDamage");
+        //SyncTrigger("Faint");
     }
 
     void SyncTrigger(string triggerName)
@@ -114,3 +132,5 @@ public class Follower : MonoBehaviour
         }
     }
 }
+
+

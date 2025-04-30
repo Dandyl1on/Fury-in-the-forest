@@ -49,9 +49,15 @@ public class SignController : MonoBehaviour
         if (other.CompareTag("Fire sign"))
         {
             toolText.enabled = true;
-            toolText.text = "Get water by pressing E in a pond to extinguish fire";
+            toolText.text = "Get water by pressing E in a pond and lower the heat meter to avoid dying from overheating";
             S.enabled = true;
             S.sprite = E;
+        }
+
+        if (other.CompareTag("WinSign"))
+        {
+            toolText.enabled = true;
+            toolText.text = "If you have found all 3 animals you can find the last Zipline to escape the burning forest";
         }
     }
 

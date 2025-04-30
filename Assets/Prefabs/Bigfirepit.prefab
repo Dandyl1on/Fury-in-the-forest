@@ -3101,7 +3101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 0}
-  DeathSound: []
+  DeathSound:
+  - {fileID: 8300000, guid: 80cd931a577eb1742a01a7b57d9d1b43, type: 3}
+  - {fileID: 8300000, guid: 80cd931a577eb1742a01a7b57d9d1b43, type: 3}
+  - {fileID: 8300000, guid: 80cd931a577eb1742a01a7b57d9d1b43, type: 3}
   Heat: {fileID: 0}
 --- !u!61 &-8300657207604834372
 BoxCollider2D:

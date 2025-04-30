@@ -16,28 +16,18 @@ public class FollowerManager : MonoBehaviour
 
     public void AddFollower(GameObject followerObj)
     {
+        if (followers.Contains(followerObj)) return; // Avoid duplicates
+
         Follower follower = followerObj.GetComponent<Follower>();
 
         if (follower != null)
         {
-            if (followers.Count == 0)
-            {
-                follower.targetToFollow = player.transform;
-            }
-            else
-            {
-                follower.targetToFollow = followers[followers.Count - 1].transform;
-            }
+            Transform followTarget = followers.Count == 0
+                ? player.transform
+                : followers[followers.Count - 1].transform;
 
-            follower.StartFollowing(followers.Count + 1); // +1 so first follower gets delay
-
-            // Optional: animation sync
-            followerObj.GetComponent<FollowerAnimatorSync>()?.StartFollowing(player.transform);
-
+            follower.StartFollowing(followTarget, followers.Count + 1);
             followers.Add(followerObj);
         }
     }
-
-
-
 }

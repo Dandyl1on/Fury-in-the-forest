@@ -95,12 +95,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 0}
   DeathSound:
-  - {fileID: 8300000, guid: a431a06facde48645b1bd21496e1ed97, type: 3}
-  - {fileID: 8300000, guid: 11460145c87d53e4d8600ee98fcfa126, type: 3}
-  - {fileID: 8300000, guid: cba794010c42502449df525e0f990f4b, type: 3}
-  - {fileID: 8300000, guid: 341b503f70d84854390a019d5d550f8b, type: 3}
-  - {fileID: 8300000, guid: 7572d06e78e327f40936b6b330b17096, type: 3}
-  - {fileID: 8300000, guid: f5c24244a327dc549823dd10c8e5770d, type: 3}
+  - {fileID: 8300000, guid: 80cd931a577eb1742a01a7b57d9d1b43, type: 3}
+  - {fileID: 8300000, guid: adb29fc762769d54aa6d85e3ae30eb82, type: 3}
+  - {fileID: 8300000, guid: 7130188b164ab2e42b8ce488b4258f60, type: 3}
   Heat: {fileID: 0}
 --- !u!1 &1437533361477147010
 GameObject:
