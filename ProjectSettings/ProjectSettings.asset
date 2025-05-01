@@ -758,7 +758,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -780,11 +786,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3025ce31-4f9e-4bf5-bea5-58584a480aa6
+  cloudProjectId: e5ba5800-cb1b-4396-beef-15c565c7c108
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Fury in the forest
-  organizationId: dandy_l1on
+  organizationId: danmarkus
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

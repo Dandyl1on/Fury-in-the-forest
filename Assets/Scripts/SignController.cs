@@ -56,7 +56,7 @@ public class SignController : MonoBehaviour
             sign.stop = true;
 
             toolText.enabled = true;
-            toolText.text = "Press E to rescue the animals";
+            toolText.text = "Press E to rescue the animals Press P to continue";
             S.enabled = true;
             S.sprite = E;
         }
@@ -67,7 +67,7 @@ public class SignController : MonoBehaviour
             sign.stop = true;
 
             toolText.enabled = true;
-            toolText.text = "Get water by pressing E in a pond and lower the heat meter to avoid dying from overheating";
+            toolText.text = "Get water by pressing E in a pond and lower the heat meter to avoid dying from overheating Press P to continue";
             S.enabled = true;
             S.sprite = E;
         }
@@ -78,7 +78,7 @@ public class SignController : MonoBehaviour
             sign.stop = true;
 
             toolText.enabled = true;
-            toolText.text = "If you have found all 3 animals you can find the last Zipline to escape the burning forest";
+            toolText.text = "If you have found all 3 animals you can find the last Zipline to escape the burning forest Press P to continue";
         }
     }
 

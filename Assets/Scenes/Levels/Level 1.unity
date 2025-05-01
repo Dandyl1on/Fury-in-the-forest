@@ -57534,10 +57534,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2001024903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 109}
-  m_SizeDelta: {x: -1820, y: 100}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1816313384
 GameObject:
@@ -58060,9 +58060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 0}
   DeathSound:
-  - {fileID: 8300000, guid: 80cd931a577eb1742a01a7b57d9d1b43, type: 3}
-  - {fileID: 8300000, guid: adb29fc762769d54aa6d85e3ae30eb82, type: 3}
-  - {fileID: 8300000, guid: 7130188b164ab2e42b8ce488b4258f60, type: 3}
+  - {fileID: 8300000, guid: 28dd11febe18b76499e58971e227685f, type: 3}
+  - {fileID: 8300000, guid: c616b305db9318f499912888d54594c9, type: 3}
   Heat: {fileID: 1887681529}
 --- !u!114 &1887681538 stripped
 MonoBehaviour:
@@ -59046,7 +59045,10 @@ MonoBehaviour:
 
     W & S to move camera
 
-    Space twice to double jump'
+    Space twice to double jump
+
+    Press
+    P to continue'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -59546,8 +59548,8 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 9d2cba4398f7e7a418b145fb577f0e0d, type: 3}
   m_Resource: {fileID: 8300000, guid: 9d2cba4398f7e7a418b145fb577f0e0d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.29
+  m_Pitch: 0.75
   Loop: 1
   Mute: 0
   Spatialize: 0
