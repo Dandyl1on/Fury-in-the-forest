@@ -1,33 +1,37 @@
 ﻿using System.Collections.Generic;
+using Scenes.Jonas;
 using UnityEngine;
 
-public class FollowerManager : MonoBehaviour
+namespace Mathias_Script
 {
-    public static FollowerManager Instance;
-    public GameObject player;
-
-    private List<GameObject> followers = new List<GameObject>();
-
-    void Awake()
+    public class FollowerManager : MonoBehaviour
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
+        public static FollowerManager Instance;
+        public GameObject player;
 
-    public void AddFollower(GameObject followerObj)
-    {
-        if (followers.Contains(followerObj)) return; // Avoid duplicates
+        private List<GameObject> followers = new List<GameObject>();
 
-        Follower follower = followerObj.GetComponent<Follower>();
-
-        if (follower != null)
+        void Awake()
         {
-            Transform followTarget = followers.Count == 0
-                ? player.transform
-                : followers[followers.Count - 1].transform;
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
+        }
 
-            follower.StartFollowing(followTarget, followers.Count + 1);
-            followers.Add(followerObj);
+        public void AddFollower(GameObject followerObj)
+        {
+            if (followers.Contains(followerObj)) return; // Avoid duplicates
+
+            Follower follower = followerObj.GetComponent<Follower>();
+
+            if (follower != null)
+            {
+                Transform followTarget = followers.Count == 0
+                    ? player.transform
+                    : followers[followers.Count - 1].transform;
+
+                follower.StartFollowing(followTarget, followers.Count + 1);
+                followers.Add(followerObj);
+            }
         }
     }
 }

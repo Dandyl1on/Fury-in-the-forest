@@ -1,36 +1,40 @@
-﻿using UnityEngine;
+﻿using Scenes.Jonas;
+using UnityEngine;
 
-public class FollowerInteractable : MonoBehaviour
+namespace Mathias_Script
 {
-    public float interactRange = 2f;
-    private bool playerInRange = false;
-    private bool isFollowing = false;
-    private Follower follower;
-
-    void Start()
+    public class FollowerInteractable : MonoBehaviour
     {
-        follower = GetComponent<Follower>(); // Get Follower script
-    }
+        public float interactRange = 2f;
+        private bool playerInRange = false;
+        private bool isFollowing = false;
+        private Follower follower;
 
-    void Update()
-    {
-        if (isFollowing) return;
+        void Start()
+        {
+            follower = GetComponent<Follower>(); // Get Follower script
+        }
 
-        GameObject player = GameObject.FindWithTag("Player");
-        if (player == null) return;
+        void Update()
+        {
+            if (isFollowing) return;
 
-        float dist = Vector2.Distance(player.transform.position, transform.position);
-        playerInRange = dist < interactRange;
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player == null) return;
+
+            float dist = Vector2.Distance(player.transform.position, transform.position);
+            playerInRange = dist < interactRange;
 
         
-        if (playerInRange && Input.GetKeyDown(KeyCode.F))
-        {
-            isFollowing = true;
-
-            if (follower != null)
+            if (playerInRange && Input.GetKeyDown(KeyCode.F))
             {
-                //follower.StartFollowing(); // ✅ Triggers hop first, then follows
-                FollowerManager.Instance.AddFollower(this.gameObject);
+                isFollowing = true;
+
+                if (follower != null)
+                {
+                    //follower.StartFollowing(); // ✅ Triggers hop first, then follows
+                    FollowerManager.Instance.AddFollower(this.gameObject);
+                }
             }
         }
     }

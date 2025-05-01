@@ -15,6 +15,7 @@ TagManager:
   - Fire sign
   - Heat begin
   - WinSign
+  - Pond
   layers:
   - Default
   - TransparentFX
