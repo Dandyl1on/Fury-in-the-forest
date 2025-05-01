@@ -35,7 +35,6 @@ public class Win : MonoBehaviour
             Destroy(heatslider);
             Destroy(heattext);
             Heat.enabled = false;
-            Playermovement.enabled = false;
             canvasaudio.loop = false;
             canvasaudio.clip = winneraudio;
             canvasaudio.volume = 0.5f;
@@ -50,5 +49,6 @@ public class Win : MonoBehaviour
         yield return new WaitForSeconds(2);
         winaudio.clip = wins;
         winaudio.Play();
+        Time.timeScale = 0;
     }
 }

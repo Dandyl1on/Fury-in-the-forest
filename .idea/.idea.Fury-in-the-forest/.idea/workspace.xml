@@ -6,20 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PlayerMovement2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PlayerMovement2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Parallax/Parallax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parallax/Parallax.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Cat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/FollowerAnimatorSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/FollowerAnimatorSync.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/FoxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/FoxController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MIXONE SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MIXONE SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/PlayfairDisplay-Black SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/PlayfairDisplay-Black SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fire.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SignController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SignController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Win.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Win.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +148,7 @@
       <workItem from="1745396709361" duration="5224000" />
       <workItem from="1745916715464" duration="9324000" />
       <workItem from="1746002035434" duration="10230000" />
-      <workItem from="1746093339684" duration="5360000" />
+      <workItem from="1746093339684" duration="5999000" />
     </task>
     <servers />
   </component>
