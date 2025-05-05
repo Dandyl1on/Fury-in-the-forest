@@ -9,6 +9,7 @@ namespace Mathias_Script
         private bool playerInRange = false;
         private bool isFollowing = false;
         private Follower follower;
+        public GameObject player;
 
         void Start()
         {
@@ -19,7 +20,6 @@ namespace Mathias_Script
         {
             if (isFollowing) return;
 
-            GameObject player = GameObject.FindWithTag("Player");
             if (player == null) return;
 
             float dist = Vector2.Distance(player.transform.position, transform.position);

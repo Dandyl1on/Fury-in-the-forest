@@ -1,4 +1,5 @@
-﻿using Mathias_Script;
+﻿using System;
+using Mathias_Script;
 using UnityEngine;
 
 namespace Scenes.Jonas
@@ -6,6 +7,12 @@ namespace Scenes.Jonas
     public class Follower : MonoBehaviour
     {
         public Playermovement Player;
+        public Transform respawn;
+
+        public GameObject Cat;
+        public GameObject Hedgehog;
+        public GameObject Squrriel;
+        
         [Header("Following")]
         public Transform targetToFollow;
         public float followSpeed = 8f;
@@ -22,6 +29,13 @@ namespace Scenes.Jonas
         private Animator foxAnimator;
 
         public Rigidbody2D rb;
+        public Heat Heat;
+
+        private void Awake()
+        {
+            Instantiate(Cat, respawn, Quaternion.identity);
+        }
+
         void Start()
         {
             myAnimator = GetComponent<Animator>();
@@ -30,6 +44,12 @@ namespace Scenes.Jonas
 
         void Update()
         {
+            if (Heat.isDead)
+            {
+                isFollowing = false;
+                transform.position = respawn.position;
+            }
+
             if (isFollowing)
             {
                 FollowPath();

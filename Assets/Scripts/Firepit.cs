@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class Firepit : MonoBehaviour
 {
     
-    public Transform respawnPoint;
     public AudioClip[] DeathSound;
     private AudioSource Audio;
     public Heat Heat;
+    public Transform Respawn;
     private void Start()
     {
         Audio = GetComponent<AudioSource>();
@@ -21,7 +21,6 @@ public class Firepit : MonoBehaviour
         if (col.CompareTag("FirePit"))
         {
             playsound();
-            StartCoroutine(Death());
         }
     }
     public void playsound()
@@ -30,13 +29,16 @@ public class Firepit : MonoBehaviour
         AudioClip death = DeathSound[index];
         Audio.clip = death;
         Audio.Play();
+        StartCoroutine(Death());
     }
 
     IEnumerator Death()
     {
         yield return new WaitForSeconds(0.3f);
-        SceneManager.LoadScene(1);
-
+        transform.position = Respawn.position;
+        Heat.beginHeat = false;
+        Heat.HeatSlider.value = 0;
+        Heat.isDead = true;
     }
     
 }

@@ -17,7 +17,7 @@ public class Pause : MonoBehaviour
         {
             Time.timeScale = 0;
         }
-        if (stop && Input.GetKeyDown(KeyCode.P))
+        if (stop && Input.GetKeyDown(KeyCode.E))
         {
             Time.timeScale = 1;
             stop = false;

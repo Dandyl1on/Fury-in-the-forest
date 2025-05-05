@@ -15,7 +15,6 @@ public class SignController : MonoBehaviour
     public Image S;
     public Sprite E;
     public Image Space;
-
     public Pause sign;
 
 

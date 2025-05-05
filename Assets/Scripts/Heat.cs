@@ -13,6 +13,9 @@ public class Heat : MonoBehaviour
     public bool beginHeat;
     public Firepit Firepit;
 
+    public Transform Respawn;
+    public bool isDead;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,7 +33,10 @@ public class Heat : MonoBehaviour
         
         if (HeatSlider.value == HeatSlider.maxValue)
         {
-            SceneManager.LoadScene(1);
+            transform.position = Respawn.position;
+            beginHeat = false;
+            HeatSlider.value = 0;
+            isDead = true;
         }
     }
 
@@ -43,7 +49,10 @@ public class Heat : MonoBehaviour
             if (HeatSlider.value == HeatSlider.maxValue)
             {
                 Firepit.playsound();
-                SceneManager.LoadScene(1);
+                transform.position = Respawn.position;
+                beginHeat = false;
+                HeatSlider.value = 0;
+                isDead = true;
             }
         }
 
@@ -58,6 +67,7 @@ public class Heat : MonoBehaviour
         if (col.CompareTag("Heat begin"))
         {
             beginHeat = true;
+            isDead = false;
         }
     }
 }

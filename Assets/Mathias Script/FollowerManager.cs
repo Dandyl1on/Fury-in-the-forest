@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Scenes.Jonas;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ namespace Mathias_Script
         public GameObject player;
 
         private List<GameObject> followers = new List<GameObject>();
+
+        public Heat Heat;
 
         void Awake()
         {
@@ -32,6 +35,23 @@ namespace Mathias_Script
                 follower.StartFollowing(followTarget, followers.Count + 1);
                 followers.Add(followerObj);
             }
+        }
+
+        private void Update()
+        {
+            if (Heat.isDead)
+            {
+                removeFollowers();
+            }
+        }
+
+        private void removeFollowers()
+        {
+            foreach (var follower in followers)
+            {
+                Destroy(follower);
+            }
+            followers.Clear();
         }
     }
 }
