@@ -34822,7 +34822,7 @@ Transform:
   m_GameObject: {fileID: 8072498}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.48, y: -1.56, z: 0}
+  m_LocalPosition: {x: -7.48, y: -0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35345,6 +35345,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2094383583}
   m_SourcePrefab: {fileID: 100100000, guid: fb131d3bca04b7042b24ce76a37d8ad3, type: 3}
+--- !u!1 &163777619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163777620}
+  m_Layer: 0
+  m_Name: Hedgehog respawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163777620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163777619}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 71.74, y: 6.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &181350124
 GameObject:
   m_ObjectHideFlags: 0
@@ -37510,6 +37541,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &601913941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601913942}
+  m_Layer: 0
+  m_Name: Squrriel respawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601913942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601913941}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 193.24, y: 6.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643177629
 GameObject:
   m_ObjectHideFlags: 0
@@ -39082,11 +39144,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1887681538}
+  respawn: {fileID: 1547788456}
   targetToFollow: {fileID: 1887681520}
   followSpeed: 8
   followDelay: 0.2
   playerTag: Player
   rb: {fileID: 993390813}
+  Heat: {fileID: 1887681529}
   stopDistance: 0.5
 --- !u!1001 &1005568972
 PrefabInstance:
@@ -45189,11 +45253,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1887681538}
+  respawn: {fileID: 163777620}
   targetToFollow: {fileID: 1887681520}
   followSpeed: 8
   followDelay: 0.2
   playerTag: Player
   rb: {fileID: 1876871649}
+  Heat: {fileID: 1887681529}
   stopDistance: 0.5
 --- !u!4 &1131295850 stripped
 Transform:
@@ -45400,6 +45466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1028012190}
+  Heat: {fileID: 1887681529}
 --- !u!1 &1201867346
 GameObject:
   m_ObjectHideFlags: 0
@@ -53453,6 +53520,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1547788455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547788456}
+  m_Layer: 0
+  m_Name: Cat respawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547788456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547788455}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.38, y: 0.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563049758
 GameObject:
   m_ObjectHideFlags: 0
@@ -55329,8 +55427,9 @@ MonoBehaviour:
   IncreaseHeat: 6
   DecreaseHeat: 50
   beginHeat: 0
-  Firepit: {fileID: 0}
-  Respawn: {fileID: 0}
+  Firepit: {fileID: 1887681535}
+  Respawn: {fileID: 8072499}
+  isDead: 0
 --- !u!114 &1887681535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55346,7 +55445,8 @@ MonoBehaviour:
   DeathSound:
   - {fileID: 8300000, guid: 28dd11febe18b76499e58971e227685f, type: 3}
   - {fileID: 8300000, guid: c616b305db9318f499912888d54594c9, type: 3}
-  Respawn: {fileID: 0}
+  Heat: {fileID: 1887681529}
+  Respawn: {fileID: 8072499}
 --- !u!114 &1887681538 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2924179295544657401, guid: 2837c4dc501768741bcd354702e00720, type: 3}
@@ -57050,6 +57150,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 6106151581285701997, guid: 5de99f133a8c9ae4cb9cde3d200dcc69, type: 3}
+      propertyPath: ani
+      value: 
+      objectReference: {fileID: 1887681523}
+    - target: {fileID: 6106151581285701997, guid: 5de99f133a8c9ae4cb9cde3d200dcc69, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1075195818}
+    - target: {fileID: 6106151581285701997, guid: 5de99f133a8c9ae4cb9cde3d200dcc69, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1028012190}
     - target: {fileID: 8061409657557062960, guid: 5de99f133a8c9ae4cb9cde3d200dcc69, type: 3}
       propertyPath: m_LocalPosition.x
       value: 218.07
@@ -57778,11 +57890,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1887681538}
+  respawn: {fileID: 601913942}
   targetToFollow: {fileID: 1887681520}
   followSpeed: 8
   followDelay: 0.2
   playerTag: Player
   rb: {fileID: 756676366}
+  Heat: {fileID: 1887681529}
   stopDistance: 0.5
 --- !u!4 &2094548508 stripped
 Transform:
@@ -58623,6 +58737,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 2050147417}
   - {fileID: 8072499}
+  - {fileID: 1547788456}
+  - {fileID: 163777620}
+  - {fileID: 601913942}
   - {fileID: 1887681519}
   - {fileID: 4821533576256333859}
   - {fileID: 287441755}
