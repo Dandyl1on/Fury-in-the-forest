@@ -8,10 +8,6 @@ namespace Scenes.Jonas
     {
         public Playermovement Player;
         public Transform respawn;
-
-        public GameObject Cat;
-        public GameObject Hedgehog;
-        public GameObject Squrriel;
         
         [Header("Following")]
         public Transform targetToFollow;
@@ -31,10 +27,6 @@ namespace Scenes.Jonas
         public Rigidbody2D rb;
         public Heat Heat;
 
-        private void Awake()
-        {
-            Instantiate(Cat, respawn.position, Quaternion.identity);
-        }
 
         void Start()
         {
@@ -68,6 +60,7 @@ namespace Scenes.Jonas
 
             var path = PathRecorder.Instance.recordedPath;
             int index = Mathf.Clamp(path.Count - pathIndexOffset - 1, 0, path.Count - 1);
+            if (index < 0 || index >= path.Count) return;
 
             if (path.Count == 0 || index < 0) return;
 

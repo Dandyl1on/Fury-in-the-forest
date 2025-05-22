@@ -35,6 +35,11 @@ namespace Mathias_Script
                 timer = 0f;
                 recordedPath.Add(transform.position); // Must be player position
             }
+            // Cap list size
+            if (recordedPath.Count > maxPoints)
+            {
+                recordedPath.RemoveAt(0); // Remove oldest point
+            }
         }
     }
 }

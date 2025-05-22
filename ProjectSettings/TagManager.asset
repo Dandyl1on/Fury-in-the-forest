@@ -16,6 +16,7 @@ TagManager:
   - Heat begin
   - WinSign
   - Pond
+  - FollowerCat
   layers:
   - Default
   - TransparentFX
