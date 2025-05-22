@@ -33,7 +33,7 @@ namespace Scenes.Jonas
 
         private void Awake()
         {
-            Instantiate(Cat, respawn, Quaternion.identity);
+            Instantiate(Cat, respawn.position, Quaternion.identity);
         }
 
         void Start()
