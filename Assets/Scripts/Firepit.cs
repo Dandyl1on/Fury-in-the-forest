@@ -35,10 +35,7 @@ public class Firepit : MonoBehaviour
     IEnumerator Death()
     {
         yield return new WaitForSeconds(0.3f);
-        transform.position = Respawn.position;
-        Heat.beginHeat = false;
-        Heat.HeatSlider.value = 0;
-        Heat.isDead = true;
+        SceneManager.LoadScene(1);
     }
     
 }
