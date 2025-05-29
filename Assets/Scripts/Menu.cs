@@ -17,6 +17,6 @@ public class Menu : MonoBehaviour
     IEnumerator Load()
     {
         yield return new WaitForSeconds(0.9f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

@@ -3,6 +3,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SignController : MonoBehaviour
@@ -55,7 +56,7 @@ public class SignController : MonoBehaviour
             sign.stop = true;
 
             toolText.enabled = true;
-            toolText.text = "Press E to rescue the animals Press P to continue";
+            toolText.text = "Press E to rescue the animals Press E to continue";
             S.enabled = true;
             S.sprite = E;
         }
@@ -66,7 +67,18 @@ public class SignController : MonoBehaviour
             sign.stop = true;
 
             toolText.enabled = true;
-            toolText.text = "Get water by pressing E in a pond and lower the heat meter to avoid dying from overheating Press P to continue";
+            toolText.text = "Get water by pressing E in a pond and lower the heat meter to avoid dying from overheating Press E to continue";
+            S.enabled = true;
+            S.sprite = E;
+        }
+        
+        if (other.CompareTag("ZipSign"))
+        {
+            sign = other.GetComponent<Pause>();
+            sign.stop = true;
+
+            toolText.enabled = true;
+            toolText.text = "Jump up to the rope and press E to use zipline. Press E to continue";
             S.enabled = true;
             S.sprite = E;
         }
@@ -77,7 +89,31 @@ public class SignController : MonoBehaviour
             sign.stop = true;
 
             toolText.enabled = true;
-            toolText.text = "If you have found all 3 animals you can find the last Zipline to escape the burning forest Press P to continue";
+            toolText.text = "If you have found all 3 animals you can find the last Zipline to escape the burning forest Press E to continue";
+        }
+
+        if (other.CompareTag("GoSign"))
+        {
+            sign.stop = true;
+
+            toolText.enabled = true;
+            toolText.text = "Press E to continue to the 1st level";
+            S.enabled = true;
+            S.sprite = E;
+            
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("GoSign") )
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                SceneManager.LoadScene(1);    
+            }
+                
+            
         }
     }
 
