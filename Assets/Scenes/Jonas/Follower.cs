@@ -1,6 +1,7 @@
 ﻿using System;
 using Mathias_Script;
 using UnityEngine;
+using System.Collections;
 
 namespace Scenes.Jonas
 {
@@ -26,6 +27,11 @@ namespace Scenes.Jonas
 
         public Rigidbody2D rb;
         public Heat Heat;
+<<<<<<< Updated upstream
+=======
+        
+    
+>>>>>>> Stashed changes
 
 
         void Start()
@@ -105,6 +111,10 @@ namespace Scenes.Jonas
             // Stack delays: each follower adds delay based on order
             pathIndexOffset = Mathf.RoundToInt((followDelay * orderInLine) / PathRecorder.Instance.recordInterval);
         }
+<<<<<<< Updated upstream
+=======
+        
+>>>>>>> Stashed changes
 
         // ===============================
         // INTERACTION

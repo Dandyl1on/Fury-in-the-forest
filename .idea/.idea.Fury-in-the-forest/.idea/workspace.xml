@@ -5,11 +5,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="632665ac-6987-4665-a63a-483f215eae7f" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Hedgehog.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Pond.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FollowerSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FollowerSpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Nearestwater.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Nearestwater.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pause.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pause.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/022369754-death-scream-4.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/022369754-death-scream-4.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/065344936-goblin-death-5.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/065344936-goblin-death-5.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/246087937-goblin-pain-scream-death-monst.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/246087937-goblin-pain-scream-death-monst.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/Death-01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/Death-01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/Death-05.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/Death-05.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/Death-07.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds/Death-07.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/Build/Webbuild.data.br" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/Build/Webbuild.framework.js.br" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/Build/Webbuild.loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/Build/Webbuild.wasm.br" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/MemoryProfiler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/fullscreen-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/progress-bar-empty-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/progress-bar-empty-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/progress-bar-full-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/progress-bar-full-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/unity-logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/unity-logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/unity-logo-title-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/TemplateData/webmemd-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webbuild/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fury-in-the-forest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/BungeeSpice-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/MIXONE SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/MIXONE SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/FollowerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/FollowerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PathRecorder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mathias Script/PlayerMovement2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mathias Script/PlayerMovement2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parallax/Parallax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parallax/Parallax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bigfirepit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bigfirepit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fire 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fire 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fire 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fire 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fireprefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fireprefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Smoke1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Smoke1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Smoke2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Smoke2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Smoke3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Smoke3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ZipLine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZipLine.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pond.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Death sounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Cat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Follower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/FollowerAnimatorSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/FollowerAnimatorSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/FoxController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/FoxController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Hedgehog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jonas/Squirrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jonas/Squirrel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Firepit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SignController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SignController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Win.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Win.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +219,11 @@
       <workItem from="1746002035434" duration="10230000" />
       <workItem from="1746093339684" duration="5999000" />
       <workItem from="1747911229406" duration="5917000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1748525781680" duration="19000" />
+      <workItem from="1748525848023" duration="2692000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
